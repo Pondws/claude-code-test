@@ -1,0 +1,49 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: auth
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d auth"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # One-shot job that applies pending migrations before the API starts.
+  migrate:
+    build: .
+    command: ["node_modules/.bin/prisma", "migrate", "deploy"]
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/auth?schema=public
+    depends_on:
+      db:
+        condition: service_healthy
+
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      # Local defaults; override in .env. Production deployments must set real values.
+      NODE_ENV: production
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/auth?schema=public
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:?set JWT_ACCESS_SECRET}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173}
+      APP_URL: ${APP_URL:-http://localhost:5173}
+      SMTP_HOST: ${SMTP_HOST:?set SMTP_HOST}
+      COOKIE_SECURE: ${COOKIE_SECURE:-true}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+volumes:
+  pgdata:
