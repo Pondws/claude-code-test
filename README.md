@@ -13,7 +13,8 @@ Production-ready authentication API built with **Express 5**, **Prisma 7**, **Po
 - Logout (current session) and logout-all (every session + every outstanding access token via `tokenVersion`)
 - Email verification and password reset with single-use, expiring, hashed tokens
 - Change password (signs out all other sessions)
-- Account lockout after repeated failed logins; constant-time-ish response for unknown emails
+- Account lockout after repeated failed logins, counted atomically so parallel guesses can't bypass it; constant-time-ish response for unknown emails
+- `Origin` check on the cookie-authenticated endpoints (`/refresh`, `/logout`) as CSRF defence-in-depth on top of `SameSite=Strict`
 - Rate limiting, Helmet security headers, strict CORS, 10 kB body limit
 - Structured logging (pino) with request IDs and secret redaction
 - Env validation at boot (fails closed on insecure production config)

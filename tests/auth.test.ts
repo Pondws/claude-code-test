@@ -72,6 +72,18 @@ describe("login", () => {
     expect(res.status).toBe(423);
     expect(res.body.error.code).toBe("ACCOUNT_LOCKED");
   });
+
+  it("cannot bypass the lockout with parallel guesses", async () => {
+    await registerUser();
+    const guesses = await Promise.all(
+      Array.from({ length: 12 }, () =>
+        api().post(`${BASE}/login`).send({ email: "alice@example.com", password: "wrong password!!" }),
+      ),
+    );
+    // MAX_FAILED_LOGINS=3 in tests: at most 3 guesses may reach the password check.
+    expect(guesses.filter((r) => r.status === 401).length).toBeLessThanOrEqual(3);
+    expect(guesses.filter((r) => r.status === 423).length).toBeGreaterThanOrEqual(9);
+  });
 });
 
 describe("me / access tokens", () => {
@@ -119,6 +131,16 @@ describe("refresh token rotation", () => {
       api().post(`${BASE}/refresh`).set("Cookie", cookie),
     ]);
     expect(results.filter((r) => r.status === 200).length).toBeLessThanOrEqual(1);
+  });
+
+  it("rejects cookie requests from untrusted origins (CSRF)", async () => {
+    const { cookie } = await registerUser();
+    const bad = await api().post(`${BASE}/refresh`).set("Cookie", cookie).set("Origin", "https://evil.test");
+    expect(bad.status).toBe(403);
+    expect(bad.body.error.code).toBe("ORIGIN_NOT_ALLOWED");
+    await api().post(`${BASE}/logout`).set("Cookie", cookie).set("Origin", "https://evil.test").expect(403);
+    // The session survived, and the trusted frontend origin still works.
+    await api().post(`${BASE}/refresh`).set("Cookie", cookie).set("Origin", "http://app.test").expect(200);
   });
 
   it("rejects missing and unknown tokens", async () => {
