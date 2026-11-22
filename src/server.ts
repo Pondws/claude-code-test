@@ -1,5 +1,6 @@
 import { createApp } from "./app.js";
 import { env } from "./config/env.js";
+import { getDummyHash } from "./lib/crypto.js";
 import { logger } from "./lib/logger.js";
 import { prisma } from "./lib/prisma.js";
 
@@ -7,6 +8,8 @@ const SHUTDOWN_TIMEOUT_MS = 10_000;
 
 async function main() {
   await prisma.$connect();
+  // Pre-compute so the first login for an unknown email is not measurably slower.
+  await getDummyHash();
 
   const app = createApp();
   const server = app.listen(env.PORT, () => {

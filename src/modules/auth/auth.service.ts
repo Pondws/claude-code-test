@@ -93,6 +93,30 @@ export async function register(input: RegisterInput, meta: ClientMeta) {
   return { user: toPublicUser(user), session };
 }
 
+/**
+ * Atomically claims one login attempt *before* the password is checked, so
+ * parallel guesses cannot all read the same counter and bypass the lockout.
+ * Each step is a single conditional UPDATE, which PostgreSQL re-evaluates
+ * under the row lock. The attempt that reaches the limit locks the account
+ * up front; a successful login then clears the lock again.
+ */
+async function reserveLoginAttempt(userId: string): Promise<"ok" | "final" | "locked"> {
+  const now = new Date();
+  const notLocked = { OR: [{ lockedUntil: null }, { lockedUntil: { lte: now } }] };
+
+  const regular = await prisma.user.updateMany({
+    where: { id: userId, failedLoginAttempts: { lt: env.MAX_FAILED_LOGINS - 1 }, ...notLocked },
+    data: { failedLoginAttempts: { increment: 1 } },
+  });
+  if (regular.count === 1) return "ok";
+
+  const final = await prisma.user.updateMany({
+    where: { id: userId, failedLoginAttempts: { gte: env.MAX_FAILED_LOGINS - 1 }, ...notLocked },
+    data: { failedLoginAttempts: 0, lockedUntil: new Date(now.getTime() + env.LOCKOUT_MINUTES * 60_000) },
+  });
+  return final.count === 1 ? "final" : "locked";
+}
+
 export async function login(input: LoginInput, meta: ClientMeta) {
   const user = await prisma.user.findUnique({ where: { email: input.email } });
 
@@ -102,22 +126,14 @@ export async function login(input: LoginInput, meta: ClientMeta) {
     throw AppError.unauthorized("Invalid email or password", "INVALID_CREDENTIALS");
   }
 
-  if (user.lockedUntil && user.lockedUntil > new Date()) {
+  const attempt = await reserveLoginAttempt(user.id);
+  if (attempt === "locked") {
     throw AppError.locked("Too many failed login attempts. Try again later.");
   }
 
   const valid = await verifyPassword(user.passwordHash, input.password);
   if (!valid) {
-    const attempts = user.failedLoginAttempts + 1;
-    const lock = attempts >= env.MAX_FAILED_LOGINS;
-    await prisma.user.update({
-      where: { id: user.id },
-      data: {
-        failedLoginAttempts: lock ? 0 : attempts,
-        lockedUntil: lock ? new Date(Date.now() + env.LOCKOUT_MINUTES * 60_000) : user.lockedUntil,
-      },
-    });
-    if (lock) logger.warn({ userId: user.id, ip: meta.ip }, "Account locked after repeated failed logins");
+    if (attempt === "final") logger.warn({ userId: user.id, ip: meta.ip }, "Account locked after repeated failed logins");
     throw AppError.unauthorized("Invalid email or password", "INVALID_CREDENTIALS");
   }
 

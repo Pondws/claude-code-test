@@ -1,6 +1,7 @@
 import { Router, type CookieOptions, type Request, type Response } from "express";
 import { env } from "../../config/env.js";
 import { requireAuth } from "../../middleware/auth.js";
+import { requireTrustedOrigin } from "../../middleware/origin.js";
 import { authLimiter, refreshLimiter } from "../../middleware/rate-limit.js";
 import { validateBody } from "../../middleware/validate.js";
 import {
@@ -62,7 +63,7 @@ authRouter.post("/login", authLimiter, validateBody(loginSchema), async (req, re
   sendSession(res, session, { user });
 });
 
-authRouter.post("/refresh", refreshLimiter, async (req, res) => {
+authRouter.post("/refresh", refreshLimiter, requireTrustedOrigin, async (req, res) => {
   try {
     const { user, session } = await auth.refresh(readRefreshToken(req), meta(req));
     sendSession(res, session, { user });
@@ -72,7 +73,7 @@ authRouter.post("/refresh", refreshLimiter, async (req, res) => {
   }
 });
 
-authRouter.post("/logout", async (req, res) => {
+authRouter.post("/logout", requireTrustedOrigin, async (req, res) => {
   await auth.logout(readRefreshToken(req));
   clearSession(res);
   res.status(204).end();
