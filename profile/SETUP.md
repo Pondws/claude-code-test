@@ -1,7 +1,9 @@
 # Pixel Room profile — setup
 
 An isometric pixel-art room for your GitHub profile README, drawn from your own stats.
-Light mode shows a sunny room; dark mode shows the same room at night.
+Three themes are generated: `pixel-room-day.svg` (sunny), `pixel-room-night.svg` (blue night) and
+`pixel-room-purple.svg` (purple neon night: LED strip, string lights, neon heart, city view, black cat).
+The README shows the day room in light mode and the purple room in dark mode — swap the file names to change that.
 
 | Room item | Driven by |
 | --- | --- |

@@ -143,6 +143,22 @@ const THEMES = {
   },
 };
 THEMES.night.wallR = '#303252';
+THEMES.purple = {
+  ...THEMES.night,
+  wallL: '#4b2a7b', wallR: '#3b2066', wallCap: '#7a4fc0', wallEdgeL: '#2e1752', wallEdgeR: '#241243',
+  base: '#2a1550', floor: '#3a2560', floorLine: '#2f1d4f', slabL: '#26164a', slabR: '#1c1038',
+  rugA: '#ff5fa2', rugB: '#2a1550', rugC: '#5b2f9c',
+  wood: '#3c2563', woodTop: '#523487', woodDark: '#2a1849', shelfIn: '#1a0f33',
+  metal: '#251a40', metalTop: '#3a2a60', metalDark: '#170f2b',
+  screen: '#120a2a', screenGlow: '#2b1a5e',
+  sky: '#1a0f3d', skyLow: '#3d1f73', frame: '#b69cff', frameDark: '#7a5fd1',
+  poster: '#1e1240', posterEdge: '#ff5fa2', heat: ['#2b1d52', '#5a32a3', '#8b4fe0', '#c36bff', '#ff7ae6'],
+  pot: '#ff5fa2', potTop: '#ff86bb', potDark: '#c23f7d', leaf: '#2fb38a', leafLight: '#6cf0c2', leafDark: '#1d7a5c',
+  text: '#e9dcff', textDim: '#a58fdc', accent: '#ff7ae6',
+  chair: '#ff5fa2', chairTop: '#ff86bb', chairDark: '#c23f7d',
+  cat: '#2b2140', catDark: '#1a1329', catLight: '#4a3a6b',
+  lamp: '#7df9ff', lampOff: '#7df9ff', mug: '#e9dcff', mugDark: '#a58fdc',
+};
 
 // ---------------------------------------------------------------- raster
 const W = 200, H = 170, SCALE = 4;
@@ -247,10 +263,11 @@ const fmt = (n) => (n >= 10000 ? `${Math.round(n / 1000)}K` : n >= 1000 ? `${(n 
 // ---------------------------------------------------------------- scene
 function render(stats, mode) {
   const T = THEMES[mode];
-  const night = mode === 'night';
+  const night = mode !== 'day';
+  const neon = mode === 'purple';
   const L = new Layer();
   const anim = { blink: new Layer('blink'), twinkle: new Layer('twinkle'), twinkle2: new Layer('twinkle2'),
-    steam: new Layer('steam'), tailA: new Layer('tail-a'), tailB: new Layer('tail-b'), glow: new Layer('glow') };
+    steam: new Layer('steam'), tailA: new Layer('tail-a'), tailB: new Layer('tail-b'), glow: new Layer('glow'), neonA: new Layer('neon-a'), neonB: new Layer('neon-b'), lights: new Layer('lights'), lights2: new Layer('lights2') };
 
   const R = 40, WH = 58, TH = 3; // room size, wall height, wall thickness
 
@@ -283,6 +300,12 @@ function render(stats, mode) {
     const cl = sky(18, 38);
     L.sprite(cl[0] - 1, cl[1], ['..11..', '.1111.', '111111'], { 1: '#ffffff' });
   }
+  if (neon) {
+    // city skyline with lit windows
+    const bld = [[9, 11, 36], [11, 13, 33], [13, 14, 39], [14, 16, 35], [16, 18, 41], [18, 21, 34]];
+    for (const [a, b, h] of bld) quadX(L, 0, a, b, wz0 + 1, h, '#0d0726');
+    for (const [y, z] of [[10, 33], [12, 31], [15, 33], [17, 37], [17, 35], [19, 31], [20, 32]]) { const [sx, sy] = sky(y, z); anim.lights2.set(sx, sy, '#ffd36e'); }
+  }
   quadX(L, 0, 14.5, 15.5, wz0, wz1, T.frame); // mullions (half units stay tie-free horizontally)
   quadX(L, 0, wy0, wy1, 37, 38, T.frame);
   box(L, 0, wy0 - 1, wz0 - 2, 2, wy1 - wy0 + 2, 2, T.frameDark, T.frameDark, T.frame); // sill
@@ -298,6 +321,27 @@ function render(stats, mode) {
     const [sx, sy] = P(px0 + 1.5 + i * 2, 0, pz1 - 2 - j * 3);
     for (let dx = 0; dx < 2; dx++) for (let dy = 0; dy < 2; dy++) L.set(sx + dx + 1, sy + dy, T.heat[lvl]);
   }));
+
+  if (neon) {
+    // LED strip under the ceiling line
+    for (let t = 0; t < R; t++) {
+      L.poly([P(0, t, WH - 2), P(0, t + 1, WH - 2), P(0, t + 1, WH - 1), P(0, t, WH - 1)], '#ff5fa2');
+      L.poly([P(t, 0, WH - 2), P(t + 1, 0, WH - 2), P(t + 1, 0, WH - 1), P(t, 0, WH - 1)], '#7df9ff');
+    }
+    quadX(L, 0, 0, R, WH - 6, WH - 2, '#ff5fa222');
+    quadY(L, 0, 0, R, WH - 6, WH - 2, '#7df9ff22');
+    // string lights along the left wall
+    for (let y = 24, k = 0; y < 39; y += 2, k++) {
+      const z = 52 - ((y - 24) % 4 === 0 ? 0 : 1);
+      const [sx, sy] = P(0, y, z);
+      L.set(sx, sy - 1, '#1a0f33');
+      (k % 2 ? anim.lights : anim.lights2).set(sx, sy, ['#ffd36e', '#ff7ae6', '#7df9ff'][k % 3]);
+    }
+    // neon heart on the left wall, next to the window
+    const hp = P(0, 4, 42);
+    anim.neonA.sprite(hp[0] - 4, hp[1] - 3, ['.11.11.', '1..1..1', '1.....1', '.1...1.', '..1.1..', '...1...'], { 1: '#ff5fa2' });
+    anim.glow.sprite(hp[0] - 5, hp[1] - 4, ['.........', '..1...1..', '.1.1.1.1.', '.1.....1.', '..1...1..', '...1.1...', '....1....'], { 1: '#ff5fa244' });
+  }
 
   // floor
   quadZ(L, 0, 0, R, 0, R, T.floor);
@@ -379,7 +423,7 @@ function render(stats, mode) {
   const lp = P(18, 2.5, top + 1);
   L.sprite(lp[0], lp[1] - 9, ['..11..', '.1..1.', '1....1', '1....1', '.1....', '.1....', '..1...', '..1...', '..1...'], { 1: T.metalDark });
   L.sprite(lp[0] - 3, lp[1] - 9, ['.33.', '3333', '2222'], { 3: T.metal, 2: night ? T.lamp : T.lampOff });
-  if (night) anim.glow.poly([P(16, 1.5, top), P(20, 1.5, top), P(21, 6, top), P(15, 6, top)].map(([x, y]) => [x - 2, y]), '#ffe06633');
+  if (night) anim.glow.poly([P(16, 1.5, top), P(20, 1.5, top), P(21, 6, top), P(15, 6, top)].map(([x, y]) => [x - 2, y]), neon ? '#7df9ff33' : '#ffe06633');
 
   // chair (back faces away from the desk)
   box(L, 24, 13, 0, 4, 4, 1, T.metalTop, T.metal, T.metalDark);
@@ -389,7 +433,7 @@ function render(stats, mode) {
 
   // cat on the rug (tail swishes)
   const cp = P(20, 28, 0);
-  const catPal = { 1: T.cat, 2: T.catDark, 3: T.catLight, k: '#2b2b2b', p: '#f28fa0' };
+  const catPal = { 1: T.cat, 2: T.catDark, 3: T.catLight, k: neon ? '#b8ff6e' : '#2b2b2b', p: '#f28fa0' };
   L.sprite(cp[0] - 8, cp[1] - 11, [
     '.1.....1.........',
     '.11...11.........',
@@ -427,6 +471,8 @@ function render(stats, mode) {
 .steam{animation:s 2.6s ease-out infinite}@keyframes s{0%{opacity:0;transform:translateY(2px)}40%{opacity:1}100%{opacity:0;transform:translateY(-3px)}}
 .tail-a{animation:ta 1.6s steps(1) infinite}.tail-b{animation:tb 1.6s steps(1) infinite}@keyframes ta{50%{opacity:0}}@keyframes tb{0%{opacity:0}50%{opacity:1}}
 .glow{animation:g 4s ease-in-out infinite}@keyframes g{50%{opacity:.6}}
+.neon-a{animation:n 5s steps(1) infinite}@keyframes n{0%,100%{opacity:1}91%{opacity:.25}93%{opacity:1}95%{opacity:.4}97%{opacity:1}}
+.lights{animation:t 1.8s ease-in-out infinite}.lights2{animation:t 1.8s ease-in-out .9s infinite}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W * SCALE}" height="${H * SCALE}" viewBox="0 0 ${W} ${H}" shape-rendering="crispEdges" role="img" aria-labelledby="t">
@@ -440,7 +486,7 @@ ${L.toPaths()}${Object.values(anim).map((a) => a.toPaths()).join('')}
 // ---------------------------------------------------------------- main
 const stats = DEMO ? demoStats(USER) : await fetchStats(USER);
 mkdirSync(OUT, { recursive: true });
-for (const mode of ['day', 'night']) {
+for (const mode of ['day', 'night', 'purple']) {
   const file = join(OUT, `pixel-room-${mode}.svg`);
   writeFileSync(file, render(stats, mode));
   console.log(`wrote ${file}`);
