@@ -16,11 +16,18 @@ The README shows the day room in light mode and the purple room in dark mode —
 
 Animated: blinking cursor, steaming mug, swishing cat tail, twinkling stars and lamp glow at night.
 
+## Dev scene GIF
+
+`generate-dev.mjs` renders `dist/dev-scene.gif` (960×540, 48 frames, ~400 KB): someone in a purple hoodie and
+headphones coding late at night — moonlight through window blinds, a glowing CRT where code types itself out,
+a ticking clock, blinking PC LEDs, steaming coffee and a sleeping cat. Your stats run along the bottom.
+It uses its own GIF encoder, so there is still nothing to install.
+
 ## Install
 
 1. Create a public repo named exactly like your username (`<username>/<username>`) — GitHub shows its README on your profile.
 2. Copy everything in this `profile/` folder to the **root** of that repo:
-   `generate-room.mjs`, `README.md`, `.github/workflows/pixel-room.yml`, `dist/`.
+   `generate-room.mjs`, `generate-dev.mjs`, `lib.mjs`, `README.md`, `.github/workflows/pixel-room.yml`, `dist/`.
 3. In that repo: **Settings → Actions → General → Workflow permissions → Read and write**.
 4. **Actions → Pixel Room → Run workflow**. It refreshes every 6 hours after that.
 
@@ -29,6 +36,7 @@ Animated: blinking cursor, steaming mug, swishing cat tail, twinkling stars and 
 ```bash
 node generate-room.mjs --user <username> --out dist          # real data (set GITHUB_TOKEN for the heatmap)
 node generate-room.mjs --user <username> --out dist --demo   # sample data, no network
+node generate-dev.mjs  --user <username> --out dist --demo   # dev scene GIF
 ```
 
 No dependencies — Node 18+ only.

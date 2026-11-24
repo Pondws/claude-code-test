@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [generate-room.mjs, .github/workflows/pixel-room.yml]
+    paths: [generate-room.mjs, generate-dev.mjs, lib.mjs, .github/workflows/pixel-room.yml]
 
 permissions:
   contents: write
@@ -19,10 +19,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Generate room
+      - name: Generate room + dev scene
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node generate-room.mjs --user "${{ github.repository_owner }}" --out dist
+        run: |
+          node generate-room.mjs --user "${{ github.repository_owner }}" --out dist
+          node generate-dev.mjs --user "${{ github.repository_owner }}" --out dist
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
