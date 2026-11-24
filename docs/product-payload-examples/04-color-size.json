@@ -1,0 +1,142 @@
+{
+  "name": "เสื้อยืด Basic Cotton",
+  "slug": "basic-cotton-tee",
+  "description": "",
+  "status": "ACTIVE",
+  "categoryId": "5f1c2a7e-3b4d-4e8f-9a10-2c3d4e5f6a7b",
+  "tagIds": [],
+  "images": [
+    {
+      "path": "products/tee-main-1.jpg",
+      "sortOrder": 0
+    },
+    {
+      "path": "products/tee-main-2.jpg",
+      "sortOrder": 1
+    },
+    {
+      "path": "products/tee-main-3.jpg",
+      "sortOrder": 2
+    },
+    {
+      "path": "products/tee-main-4.jpg",
+      "sortOrder": 3
+    },
+    {
+      "path": "products/tee-main-5.jpg",
+      "sortOrder": 4
+    }
+  ],
+  "options": [
+    {
+      "productVariantId": "opt-color",
+      "showImage": true,
+      "variantIds": [
+        "val-black",
+        "val-red"
+      ]
+    },
+    {
+      "productVariantId": "opt-size",
+      "showImage": false,
+      "variantIds": [
+        "val-m",
+        "val-l"
+      ]
+    }
+  ],
+  "imageGroups": [
+    {
+      "variantIds": [
+        "val-black"
+      ],
+      "images": [
+        {
+          "path": "products/tee-black-1.jpg",
+          "sortOrder": 0
+        },
+        {
+          "path": "products/tee-black-2.jpg",
+          "sortOrder": 1
+        },
+        {
+          "path": "products/tee-black-3.jpg",
+          "sortOrder": 2
+        },
+        {
+          "path": "products/tee-black-4.jpg",
+          "sortOrder": 3
+        },
+        {
+          "path": "products/tee-black-5.jpg",
+          "sortOrder": 4
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-red"
+      ],
+      "images": [
+        {
+          "path": "products/tee-red-1.jpg",
+          "sortOrder": 0
+        },
+        {
+          "path": "products/tee-red-2.jpg",
+          "sortOrder": 1
+        }
+      ]
+    }
+  ],
+  "skus": [
+    {
+      "variantIds": [
+        "val-black",
+        "val-m"
+      ],
+      "sku": "TEE-BLACK-M",
+      "price": "590.00",
+      "compareAtPrice": "790.00",
+      "stock": 12,
+      "weightGrams": 220,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-black",
+        "val-l"
+      ],
+      "sku": "TEE-BLACK-L",
+      "price": "590.00",
+      "compareAtPrice": null,
+      "stock": 8,
+      "weightGrams": 240,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-red",
+        "val-m"
+      ],
+      "sku": "TEE-RED-M",
+      "price": "590.00",
+      "compareAtPrice": null,
+      "stock": 0,
+      "weightGrams": 220,
+      "status": "INACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-red",
+        "val-l"
+      ],
+      "sku": "TEE-RED-L",
+      "price": "590.00",
+      "compareAtPrice": null,
+      "stock": 5,
+      "weightGrams": null,
+      "status": "ACTIVE"
+    }
+  ]
+}

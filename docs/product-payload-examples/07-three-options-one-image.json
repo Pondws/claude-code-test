@@ -1,0 +1,214 @@
+{
+  "name": "กางเกงยีนส์",
+  "slug": "jeans",
+  "description": "",
+  "status": "ACTIVE",
+  "categoryId": "5f1c2a7e-3b4d-4e8f-9a10-2c3d4e5f6a7b",
+  "tagIds": [],
+  "images": [
+    {
+      "path": "products/jeans-main-1.jpg",
+      "sortOrder": 0
+    },
+    {
+      "path": "products/jeans-main-2.jpg",
+      "sortOrder": 1
+    },
+    {
+      "path": "products/jeans-main-3.jpg",
+      "sortOrder": 2
+    },
+    {
+      "path": "products/jeans-main-4.jpg",
+      "sortOrder": 3
+    },
+    {
+      "path": "products/jeans-main-5.jpg",
+      "sortOrder": 4
+    }
+  ],
+  "options": [
+    {
+      "productVariantId": "opt-color",
+      "showImage": true,
+      "variantIds": [
+        "val-blue",
+        "val-black"
+      ]
+    },
+    {
+      "productVariantId": "opt-size",
+      "showImage": false,
+      "variantIds": [
+        "val-30",
+        "val-32"
+      ]
+    },
+    {
+      "productVariantId": "opt-length",
+      "showImage": false,
+      "variantIds": [
+        "val-regular",
+        "val-long"
+      ]
+    }
+  ],
+  "imageGroups": [
+    {
+      "variantIds": [
+        "val-blue"
+      ],
+      "images": [
+        {
+          "path": "products/jeans-blue-1.jpg",
+          "sortOrder": 0
+        },
+        {
+          "path": "products/jeans-blue-2.jpg",
+          "sortOrder": 1
+        },
+        {
+          "path": "products/jeans-blue-3.jpg",
+          "sortOrder": 2
+        },
+        {
+          "path": "products/jeans-blue-4.jpg",
+          "sortOrder": 3
+        },
+        {
+          "path": "products/jeans-blue-5.jpg",
+          "sortOrder": 4
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-black"
+      ],
+      "images": [
+        {
+          "path": "products/jeans-black-1.jpg",
+          "sortOrder": 0
+        },
+        {
+          "path": "products/jeans-black-2.jpg",
+          "sortOrder": 1
+        },
+        {
+          "path": "products/jeans-black-3.jpg",
+          "sortOrder": 2
+        },
+        {
+          "path": "products/jeans-black-4.jpg",
+          "sortOrder": 3
+        }
+      ]
+    }
+  ],
+  "skus": [
+    {
+      "variantIds": [
+        "val-blue",
+        "val-30",
+        "val-regular"
+      ],
+      "sku": "JEANS-BLUE-30-R",
+      "price": "1290.00",
+      "compareAtPrice": null,
+      "stock": 4,
+      "weightGrams": 600,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-blue",
+        "val-30",
+        "val-long"
+      ],
+      "sku": "JEANS-BLUE-30-L",
+      "price": "1290.00",
+      "compareAtPrice": null,
+      "stock": 2,
+      "weightGrams": 620,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-blue",
+        "val-32",
+        "val-regular"
+      ],
+      "sku": "JEANS-BLUE-32-R",
+      "price": "1290.00",
+      "compareAtPrice": null,
+      "stock": 6,
+      "weightGrams": 610,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-blue",
+        "val-32",
+        "val-long"
+      ],
+      "sku": "JEANS-BLUE-32-L",
+      "price": "1290.00",
+      "compareAtPrice": null,
+      "stock": 3,
+      "weightGrams": 630,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-black",
+        "val-30",
+        "val-regular"
+      ],
+      "sku": "JEANS-BLACK-30-R",
+      "price": "1390.00",
+      "compareAtPrice": null,
+      "stock": 5,
+      "weightGrams": 600,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-black",
+        "val-30",
+        "val-long"
+      ],
+      "sku": "JEANS-BLACK-30-L",
+      "price": "1390.00",
+      "compareAtPrice": null,
+      "stock": 1,
+      "weightGrams": 620,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-black",
+        "val-32",
+        "val-regular"
+      ],
+      "sku": "JEANS-BLACK-32-R",
+      "price": "1390.00",
+      "compareAtPrice": null,
+      "stock": 0,
+      "weightGrams": 610,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-black",
+        "val-32",
+        "val-long"
+      ],
+      "sku": "JEANS-BLACK-32-L",
+      "price": "1390.00",
+      "compareAtPrice": null,
+      "stock": 2,
+      "weightGrams": 630,
+      "status": "ACTIVE"
+    }
+  ]
+}

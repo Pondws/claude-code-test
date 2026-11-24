@@ -1,0 +1,77 @@
+{
+  "name": "ถุงเท้าข้อสั้น",
+  "slug": "ankle-socks",
+  "description": "",
+  "status": "ACTIVE",
+  "categoryId": "5f1c2a7e-3b4d-4e8f-9a10-2c3d4e5f6a7b",
+  "tagIds": [],
+  "images": [
+    {
+      "path": "products/socks-main-1.jpg",
+      "sortOrder": 0
+    },
+    {
+      "path": "products/socks-main-2.jpg",
+      "sortOrder": 1
+    },
+    {
+      "path": "products/socks-main-3.jpg",
+      "sortOrder": 2
+    },
+    {
+      "path": "products/socks-main-4.jpg",
+      "sortOrder": 3
+    },
+    {
+      "path": "products/socks-main-5.jpg",
+      "sortOrder": 4
+    }
+  ],
+  "options": [
+    {
+      "productVariantId": "opt-size",
+      "showImage": false,
+      "variantIds": [
+        "val-s",
+        "val-m",
+        "val-l"
+      ]
+    }
+  ],
+  "imageGroups": [],
+  "skus": [
+    {
+      "variantIds": [
+        "val-s"
+      ],
+      "sku": "SOCKS-S",
+      "price": "99.00",
+      "compareAtPrice": null,
+      "stock": 20,
+      "weightGrams": 40,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-m"
+      ],
+      "sku": "SOCKS-M",
+      "price": "99.00",
+      "compareAtPrice": null,
+      "stock": 15,
+      "weightGrams": 45,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-l"
+      ],
+      "sku": "SOCKS-L",
+      "price": "109.00",
+      "compareAtPrice": null,
+      "stock": 0,
+      "weightGrams": 50,
+      "status": "ACTIVE"
+    }
+  ]
+}

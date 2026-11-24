@@ -1,0 +1,130 @@
+{
+  "name": "เคสโทรศัพท์",
+  "slug": "phone-case",
+  "description": "",
+  "status": "ACTIVE",
+  "categoryId": "5f1c2a7e-3b4d-4e8f-9a10-2c3d4e5f6a7b",
+  "tagIds": [],
+  "images": [
+    {
+      "path": "products/case-main-1.jpg",
+      "sortOrder": 0
+    },
+    {
+      "path": "products/case-main-2.jpg",
+      "sortOrder": 1
+    },
+    {
+      "path": "products/case-main-3.jpg",
+      "sortOrder": 2
+    },
+    {
+      "path": "products/case-main-4.jpg",
+      "sortOrder": 3
+    },
+    {
+      "path": "products/case-main-5.jpg",
+      "sortOrder": 4
+    }
+  ],
+  "options": [
+    {
+      "productVariantId": "opt-color",
+      "showImage": true,
+      "variantIds": [
+        "val-black",
+        "val-red",
+        "val-blue"
+      ]
+    }
+  ],
+  "imageGroups": [
+    {
+      "variantIds": [
+        "val-black"
+      ],
+      "images": [
+        {
+          "path": "products/case-black-1.jpg",
+          "sortOrder": 0
+        },
+        {
+          "path": "products/case-black-2.jpg",
+          "sortOrder": 1
+        },
+        {
+          "path": "products/case-black-3.jpg",
+          "sortOrder": 2
+        },
+        {
+          "path": "products/case-black-4.jpg",
+          "sortOrder": 3
+        },
+        {
+          "path": "products/case-black-5.jpg",
+          "sortOrder": 4
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-red"
+      ],
+      "images": [
+        {
+          "path": "products/case-red-1.jpg",
+          "sortOrder": 0
+        },
+        {
+          "path": "products/case-red-2.jpg",
+          "sortOrder": 1
+        },
+        {
+          "path": "products/case-red-3.jpg",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-blue"
+      ],
+      "images": []
+    }
+  ],
+  "skus": [
+    {
+      "variantIds": [
+        "val-black"
+      ],
+      "sku": "CASE-BLACK",
+      "price": "190.00",
+      "compareAtPrice": "250.00",
+      "stock": 10,
+      "weightGrams": 30,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-red"
+      ],
+      "sku": "CASE-RED",
+      "price": "190.00",
+      "compareAtPrice": null,
+      "stock": 5,
+      "weightGrams": 30,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-blue"
+      ],
+      "sku": "CASE-BLUE",
+      "price": "190.00",
+      "compareAtPrice": null,
+      "stock": 7,
+      "weightGrams": 30,
+      "status": "ACTIVE"
+    }
+  ]
+}
