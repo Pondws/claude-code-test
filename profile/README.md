@@ -5,6 +5,6 @@
   <img alt="My pixel room" src="./dist/pixel-room-day.svg" width="800">
 </picture>
 
-### Hi, I'm pondws 👋
+### Hi there 👋
 
 </div>

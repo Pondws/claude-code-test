@@ -16,7 +16,7 @@ Animated: blinking cursor, steaming mug, swishing cat tail, twinkling stars and 
 
 ## Install
 
-1. Create a public repo named exactly like your username (`pondws/pondws`) — GitHub shows its README on your profile.
+1. Create a public repo named exactly like your username (`<username>/<username>`) — GitHub shows its README on your profile.
 2. Copy everything in this `profile/` folder to the **root** of that repo:
    `generate-room.mjs`, `README.md`, `.github/workflows/pixel-room.yml`, `dist/`.
 3. In that repo: **Settings → Actions → General → Workflow permissions → Read and write**.
@@ -25,8 +25,8 @@ Animated: blinking cursor, steaming mug, swishing cat tail, twinkling stars and 
 ## Run locally
 
 ```bash
-node generate-room.mjs --user pondws --out dist          # real data (set GITHUB_TOKEN for the heatmap)
-node generate-room.mjs --user pondws --out dist --demo   # sample data, no network
+node generate-room.mjs --user <username> --out dist          # real data (set GITHUB_TOKEN for the heatmap)
+node generate-room.mjs --user <username> --out dist --demo   # sample data, no network
 ```
 
 No dependencies — Node 18+ only.
