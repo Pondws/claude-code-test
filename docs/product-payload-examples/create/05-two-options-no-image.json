@@ -7,27 +7,27 @@
   "tagIds": [],
   "images": [
     {
-      "path": "tmp/uploads/slacks-main-1.jpg",
+      "path": "tmp/products/slacks-main-1.jpg",
       "alt": "กางเกงสแล็ค รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "tmp/uploads/slacks-main-2.jpg",
+      "path": "tmp/products/slacks-main-2.jpg",
       "alt": "กางเกงสแล็ค รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "tmp/uploads/slacks-main-3.jpg",
+      "path": "tmp/products/slacks-main-3.jpg",
       "alt": "กางเกงสแล็ค รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "tmp/uploads/slacks-main-4.jpg",
+      "path": "tmp/products/slacks-main-4.jpg",
       "alt": "กางเกงสแล็ค รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "tmp/uploads/slacks-main-5.jpg",
+      "path": "tmp/products/slacks-main-5.jpg",
       "alt": "กางเกงสแล็ค รูปที่ 5",
       "sortOrder": 4
     }

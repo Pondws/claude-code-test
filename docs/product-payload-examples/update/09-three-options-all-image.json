@@ -183,17 +183,17 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/bag-brn-pln-can-1.jpg",
+          "path": "tmp/products/bag-brn-pln-can-1.jpg",
           "alt": "กระเป๋าผ้าน้ำตาล รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/bag-brn-pln-can-2.jpg",
+          "path": "tmp/products/bag-brn-pln-can-2.jpg",
           "alt": "กระเป๋าผ้าน้ำตาล รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/bag-brn-pln-can-3.jpg",
+          "path": "tmp/products/bag-brn-pln-can-3.jpg",
           "alt": "กระเป๋าผ้าน้ำตาล รูปที่ 3",
           "sortOrder": 2
         }

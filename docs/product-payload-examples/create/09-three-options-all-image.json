@@ -7,27 +7,27 @@
   "tagIds": [],
   "images": [
     {
-      "path": "tmp/uploads/bag-main-1.jpg",
+      "path": "tmp/products/bag-main-1.jpg",
       "alt": "กระเป๋าสะพาย รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "tmp/uploads/bag-main-2.jpg",
+      "path": "tmp/products/bag-main-2.jpg",
       "alt": "กระเป๋าสะพาย รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "tmp/uploads/bag-main-3.jpg",
+      "path": "tmp/products/bag-main-3.jpg",
       "alt": "กระเป๋าสะพาย รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "tmp/uploads/bag-main-4.jpg",
+      "path": "tmp/products/bag-main-4.jpg",
       "alt": "กระเป๋าสะพาย รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "tmp/uploads/bag-main-5.jpg",
+      "path": "tmp/products/bag-main-5.jpg",
       "alt": "กระเป๋าสะพาย รูปที่ 5",
       "sortOrder": 4
     }
@@ -67,27 +67,27 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/bag-blk-pln-lea-1.jpg",
+          "path": "tmp/products/bag-blk-pln-lea-1.jpg",
           "alt": "กระเป๋าหนังดำ รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/bag-blk-pln-lea-2.jpg",
+          "path": "tmp/products/bag-blk-pln-lea-2.jpg",
           "alt": "กระเป๋าหนังดำ รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/bag-blk-pln-lea-3.jpg",
+          "path": "tmp/products/bag-blk-pln-lea-3.jpg",
           "alt": "กระเป๋าหนังดำ รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "tmp/uploads/bag-blk-pln-lea-4.jpg",
+          "path": "tmp/products/bag-blk-pln-lea-4.jpg",
           "alt": "กระเป๋าหนังดำ รูปที่ 4",
           "sortOrder": 3
         },
         {
-          "path": "tmp/uploads/bag-blk-pln-lea-5.jpg",
+          "path": "tmp/products/bag-blk-pln-lea-5.jpg",
           "alt": "กระเป๋าหนังดำ รูปที่ 5",
           "sortOrder": 4
         }
@@ -101,22 +101,22 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/bag-blk-pln-can-1.jpg",
+          "path": "tmp/products/bag-blk-pln-can-1.jpg",
           "alt": "กระเป๋าผ้าดำ รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/bag-blk-pln-can-2.jpg",
+          "path": "tmp/products/bag-blk-pln-can-2.jpg",
           "alt": "กระเป๋าผ้าดำ รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/bag-blk-pln-can-3.jpg",
+          "path": "tmp/products/bag-blk-pln-can-3.jpg",
           "alt": "กระเป๋าผ้าดำ รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "tmp/uploads/bag-blk-pln-can-4.jpg",
+          "path": "tmp/products/bag-blk-pln-can-4.jpg",
           "alt": "กระเป๋าผ้าดำ รูปที่ 4",
           "sortOrder": 3
         }
@@ -130,17 +130,17 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/bag-blk-str-can-1.jpg",
+          "path": "tmp/products/bag-blk-str-can-1.jpg",
           "alt": "กระเป๋าผ้าดำลายทาง รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/bag-blk-str-can-2.jpg",
+          "path": "tmp/products/bag-blk-str-can-2.jpg",
           "alt": "กระเป๋าผ้าดำลายทาง รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/bag-blk-str-can-3.jpg",
+          "path": "tmp/products/bag-blk-str-can-3.jpg",
           "alt": "กระเป๋าผ้าดำลายทาง รูปที่ 3",
           "sortOrder": 2
         }
@@ -154,27 +154,27 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/bag-brn-pln-lea-1.jpg",
+          "path": "tmp/products/bag-brn-pln-lea-1.jpg",
           "alt": "กระเป๋าหนังน้ำตาล รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/bag-brn-pln-lea-2.jpg",
+          "path": "tmp/products/bag-brn-pln-lea-2.jpg",
           "alt": "กระเป๋าหนังน้ำตาล รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/bag-brn-pln-lea-3.jpg",
+          "path": "tmp/products/bag-brn-pln-lea-3.jpg",
           "alt": "กระเป๋าหนังน้ำตาล รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "tmp/uploads/bag-brn-pln-lea-4.jpg",
+          "path": "tmp/products/bag-brn-pln-lea-4.jpg",
           "alt": "กระเป๋าหนังน้ำตาล รูปที่ 4",
           "sortOrder": 3
         },
         {
-          "path": "tmp/uploads/bag-brn-pln-lea-5.jpg",
+          "path": "tmp/products/bag-brn-pln-lea-5.jpg",
           "alt": "กระเป๋าหนังน้ำตาล รูปที่ 5",
           "sortOrder": 4
         }
@@ -188,12 +188,12 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/bag-brn-str-can-1.jpg",
+          "path": "tmp/products/bag-brn-str-can-1.jpg",
           "alt": "กระเป๋าผ้าน้ำตาลลายทาง รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/bag-brn-str-can-2.jpg",
+          "path": "tmp/products/bag-brn-str-can-2.jpg",
           "alt": "กระเป๋าผ้าน้ำตาลลายทาง รูปที่ 2",
           "sortOrder": 1
         }

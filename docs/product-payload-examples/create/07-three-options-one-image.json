@@ -7,27 +7,27 @@
   "tagIds": [],
   "images": [
     {
-      "path": "tmp/uploads/jeans-main-1.jpg",
+      "path": "tmp/products/jeans-main-1.jpg",
       "alt": "กางเกงยีนส์ รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "tmp/uploads/jeans-main-2.jpg",
+      "path": "tmp/products/jeans-main-2.jpg",
       "alt": "กางเกงยีนส์ รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "tmp/uploads/jeans-main-3.jpg",
+      "path": "tmp/products/jeans-main-3.jpg",
       "alt": "กางเกงยีนส์ รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "tmp/uploads/jeans-main-4.jpg",
+      "path": "tmp/products/jeans-main-4.jpg",
       "alt": "กางเกงยีนส์ รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "tmp/uploads/jeans-main-5.jpg",
+      "path": "tmp/products/jeans-main-5.jpg",
       "alt": "กางเกงยีนส์ รูปที่ 5",
       "sortOrder": 4
     }
@@ -65,27 +65,27 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/jeans-blue-1.jpg",
+          "path": "tmp/products/jeans-blue-1.jpg",
           "alt": "ยีนส์สีฟ้า รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/jeans-blue-2.jpg",
+          "path": "tmp/products/jeans-blue-2.jpg",
           "alt": "ยีนส์สีฟ้า รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/jeans-blue-3.jpg",
+          "path": "tmp/products/jeans-blue-3.jpg",
           "alt": "ยีนส์สีฟ้า รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "tmp/uploads/jeans-blue-4.jpg",
+          "path": "tmp/products/jeans-blue-4.jpg",
           "alt": "ยีนส์สีฟ้า รูปที่ 4",
           "sortOrder": 3
         },
         {
-          "path": "tmp/uploads/jeans-blue-5.jpg",
+          "path": "tmp/products/jeans-blue-5.jpg",
           "alt": "ยีนส์สีฟ้า รูปที่ 5",
           "sortOrder": 4
         }
@@ -97,22 +97,22 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/jeans-black-1.jpg",
+          "path": "tmp/products/jeans-black-1.jpg",
           "alt": "ยีนส์สีดำ รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/jeans-black-2.jpg",
+          "path": "tmp/products/jeans-black-2.jpg",
           "alt": "ยีนส์สีดำ รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/jeans-black-3.jpg",
+          "path": "tmp/products/jeans-black-3.jpg",
           "alt": "ยีนส์สีดำ รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "tmp/uploads/jeans-black-4.jpg",
+          "path": "tmp/products/jeans-black-4.jpg",
           "alt": "ยีนส์สีดำ รูปที่ 4",
           "sortOrder": 3
         }

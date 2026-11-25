@@ -7,27 +7,27 @@
   "tagIds": [],
   "images": [
     {
-      "path": "tmp/uploads/shirt-main-1.jpg",
+      "path": "tmp/products/shirt-main-1.jpg",
       "alt": "เสื้อเชิ้ตลาย รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "tmp/uploads/shirt-main-2.jpg",
+      "path": "tmp/products/shirt-main-2.jpg",
       "alt": "เสื้อเชิ้ตลาย รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "tmp/uploads/shirt-main-3.jpg",
+      "path": "tmp/products/shirt-main-3.jpg",
       "alt": "เสื้อเชิ้ตลาย รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "tmp/uploads/shirt-main-4.jpg",
+      "path": "tmp/products/shirt-main-4.jpg",
       "alt": "เสื้อเชิ้ตลาย รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "tmp/uploads/shirt-main-5.jpg",
+      "path": "tmp/products/shirt-main-5.jpg",
       "alt": "เสื้อเชิ้ตลาย รูปที่ 5",
       "sortOrder": 4
     }
@@ -66,27 +66,27 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/shirt-black-stripe-1.jpg",
+          "path": "tmp/products/shirt-black-stripe-1.jpg",
           "alt": "เชิ้ตดำลายทาง รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/shirt-black-stripe-2.jpg",
+          "path": "tmp/products/shirt-black-stripe-2.jpg",
           "alt": "เชิ้ตดำลายทาง รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/shirt-black-stripe-3.jpg",
+          "path": "tmp/products/shirt-black-stripe-3.jpg",
           "alt": "เชิ้ตดำลายทาง รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "tmp/uploads/shirt-black-stripe-4.jpg",
+          "path": "tmp/products/shirt-black-stripe-4.jpg",
           "alt": "เชิ้ตดำลายทาง รูปที่ 4",
           "sortOrder": 3
         },
         {
-          "path": "tmp/uploads/shirt-black-stripe-5.jpg",
+          "path": "tmp/products/shirt-black-stripe-5.jpg",
           "alt": "เชิ้ตดำลายทาง รูปที่ 5",
           "sortOrder": 4
         }
@@ -99,27 +99,27 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/shirt-black-dot-1.jpg",
+          "path": "tmp/products/shirt-black-dot-1.jpg",
           "alt": "เชิ้ตดำลายจุด รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/shirt-black-dot-2.jpg",
+          "path": "tmp/products/shirt-black-dot-2.jpg",
           "alt": "เชิ้ตดำลายจุด รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/shirt-black-dot-3.jpg",
+          "path": "tmp/products/shirt-black-dot-3.jpg",
           "alt": "เชิ้ตดำลายจุด รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "tmp/uploads/shirt-black-dot-4.jpg",
+          "path": "tmp/products/shirt-black-dot-4.jpg",
           "alt": "เชิ้ตดำลายจุด รูปที่ 4",
           "sortOrder": 3
         },
         {
-          "path": "tmp/uploads/shirt-black-dot-5.jpg",
+          "path": "tmp/products/shirt-black-dot-5.jpg",
           "alt": "เชิ้ตดำลายจุด รูปที่ 5",
           "sortOrder": 4
         }
@@ -132,17 +132,17 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/shirt-red-stripe-1.jpg",
+          "path": "tmp/products/shirt-red-stripe-1.jpg",
           "alt": "เชิ้ตแดงลายทาง รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/shirt-red-stripe-2.jpg",
+          "path": "tmp/products/shirt-red-stripe-2.jpg",
           "alt": "เชิ้ตแดงลายทาง รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/shirt-red-stripe-3.jpg",
+          "path": "tmp/products/shirt-red-stripe-3.jpg",
           "alt": "เชิ้ตแดงลายทาง รูปที่ 3",
           "sortOrder": 2
         }

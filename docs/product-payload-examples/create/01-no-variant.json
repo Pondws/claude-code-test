@@ -7,27 +7,27 @@
   "tagIds": [],
   "images": [
     {
-      "path": "tmp/uploads/mug-main-1.jpg",
+      "path": "tmp/products/mug-main-1.jpg",
       "alt": "แก้วเซรามิก รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "tmp/uploads/mug-main-2.jpg",
+      "path": "tmp/products/mug-main-2.jpg",
       "alt": "แก้วเซรามิก รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "tmp/uploads/mug-main-3.jpg",
+      "path": "tmp/products/mug-main-3.jpg",
       "alt": "แก้วเซรามิก รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "tmp/uploads/mug-main-4.jpg",
+      "path": "tmp/products/mug-main-4.jpg",
       "alt": "แก้วเซรามิก รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "tmp/uploads/mug-main-5.jpg",
+      "path": "tmp/products/mug-main-5.jpg",
       "alt": "แก้วเซรามิก รูปที่ 5",
       "sortOrder": 4
     }

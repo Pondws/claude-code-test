@@ -7,27 +7,27 @@
   "tagIds": [],
   "images": [
     {
-      "path": "tmp/uploads/tee-main-1.jpg",
+      "path": "tmp/products/tee-main-1.jpg",
       "alt": "เสื้อยืด Basic Cotton รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "tmp/uploads/tee-main-2.jpg",
+      "path": "tmp/products/tee-main-2.jpg",
       "alt": "เสื้อยืด Basic Cotton รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "tmp/uploads/tee-main-3.jpg",
+      "path": "tmp/products/tee-main-3.jpg",
       "alt": "เสื้อยืด Basic Cotton รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "tmp/uploads/tee-main-4.jpg",
+      "path": "tmp/products/tee-main-4.jpg",
       "alt": "เสื้อยืด Basic Cotton รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "tmp/uploads/tee-main-5.jpg",
+      "path": "tmp/products/tee-main-5.jpg",
       "alt": "เสื้อยืด Basic Cotton รูปที่ 5",
       "sortOrder": 4
     }
@@ -57,27 +57,27 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/tee-black-1.jpg",
+          "path": "tmp/products/tee-black-1.jpg",
           "alt": "เสื้อยืดสีดำ รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/tee-black-2.jpg",
+          "path": "tmp/products/tee-black-2.jpg",
           "alt": "เสื้อยืดสีดำ รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/tee-black-3.jpg",
+          "path": "tmp/products/tee-black-3.jpg",
           "alt": "เสื้อยืดสีดำ รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "tmp/uploads/tee-black-4.jpg",
+          "path": "tmp/products/tee-black-4.jpg",
           "alt": "เสื้อยืดสีดำ รูปที่ 4",
           "sortOrder": 3
         },
         {
-          "path": "tmp/uploads/tee-black-5.jpg",
+          "path": "tmp/products/tee-black-5.jpg",
           "alt": "เสื้อยืดสีดำ รูปที่ 5",
           "sortOrder": 4
         }
@@ -89,12 +89,12 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/tee-red-1.jpg",
+          "path": "tmp/products/tee-red-1.jpg",
           "alt": "เสื้อยืดสีแดง รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/tee-red-2.jpg",
+          "path": "tmp/products/tee-red-2.jpg",
           "alt": "เสื้อยืดสีแดง รูปที่ 2",
           "sortOrder": 1
         }

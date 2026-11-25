@@ -91,12 +91,12 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/case-blue-1.jpg",
+          "path": "tmp/products/case-blue-1.jpg",
           "alt": "เคสสีน้ำเงิน รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/case-blue-2.jpg",
+          "path": "tmp/products/case-blue-2.jpg",
           "alt": "เคสสีน้ำเงิน รูปที่ 2",
           "sortOrder": 1
         }

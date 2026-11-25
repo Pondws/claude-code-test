@@ -7,27 +7,27 @@
   "tagIds": [],
   "images": [
     {
-      "path": "tmp/uploads/case-main-1.jpg",
+      "path": "tmp/products/case-main-1.jpg",
       "alt": "เคสโทรศัพท์ รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "tmp/uploads/case-main-2.jpg",
+      "path": "tmp/products/case-main-2.jpg",
       "alt": "เคสโทรศัพท์ รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "tmp/uploads/case-main-3.jpg",
+      "path": "tmp/products/case-main-3.jpg",
       "alt": "เคสโทรศัพท์ รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "tmp/uploads/case-main-4.jpg",
+      "path": "tmp/products/case-main-4.jpg",
       "alt": "เคสโทรศัพท์ รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "tmp/uploads/case-main-5.jpg",
+      "path": "tmp/products/case-main-5.jpg",
       "alt": "เคสโทรศัพท์ รูปที่ 5",
       "sortOrder": 4
     }
@@ -50,27 +50,27 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/case-black-1.jpg",
+          "path": "tmp/products/case-black-1.jpg",
           "alt": "เคสสีดำ รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/case-black-2.jpg",
+          "path": "tmp/products/case-black-2.jpg",
           "alt": "เคสสีดำ รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/case-black-3.jpg",
+          "path": "tmp/products/case-black-3.jpg",
           "alt": "เคสสีดำ รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "tmp/uploads/case-black-4.jpg",
+          "path": "tmp/products/case-black-4.jpg",
           "alt": "เคสสีดำ รูปที่ 4",
           "sortOrder": 3
         },
         {
-          "path": "tmp/uploads/case-black-5.jpg",
+          "path": "tmp/products/case-black-5.jpg",
           "alt": "เคสสีดำ รูปที่ 5",
           "sortOrder": 4
         }
@@ -82,17 +82,17 @@
       ],
       "images": [
         {
-          "path": "tmp/uploads/case-red-1.jpg",
+          "path": "tmp/products/case-red-1.jpg",
           "alt": "เคสสีแดง รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "tmp/uploads/case-red-2.jpg",
+          "path": "tmp/products/case-red-2.jpg",
           "alt": "เคสสีแดง รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "tmp/uploads/case-red-3.jpg",
+          "path": "tmp/products/case-red-3.jpg",
           "alt": "เคสสีแดง รูปที่ 3",
           "sortOrder": 2
         }
