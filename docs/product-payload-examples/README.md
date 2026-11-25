@@ -39,15 +39,18 @@ ID ในไฟล์ใช้ชื่ออ่านง่าย (`opt-color`,
 
 ## 3. รูป
 
-1. ขอ URL อัปโหลดจาก `POST /uploads/presign` ระบบจะตรวจ `contentType` (jpeg/png/webp) และ `size` (ไม่เกินที่กำหนด)
-2. อัปโหลดไฟล์ตรงไปที่ storage ด้วย `uploadUrl`
+รูปเก็บที่ Supabase Storage bucket `product-images` (public) แบ่ง prefix เป็น `tmp/uploads/` (รอบันทึก) กับ `products/<productId>/` (ใช้งานจริง)
+
+1. ขอ URL อัปโหลดจาก `POST /uploads/presign` backend ตรวจ `contentType` (jpeg/png/webp) กับ `size` แล้วเรียก `createSignedUploadUrl(path)` ด้วย service role key (URL ใช้ได้ 2 ชั่วโมง)
+2. frontend อัปโหลดด้วย `supabase.storage.from(bucket).uploadToSignedUrl(path, token, file)` ใช้ anon key ได้ เพราะสิทธิ์มาจาก token
 3. ส่ง `path` ที่ได้ (`tmp/uploads/...`) มาใน payload สินค้า
 
 กฎ:
 - รูปใหม่ต้องเป็น `path` ที่ขึ้นต้นด้วย `tmp/uploads/` เท่านั้น ส่วนรูปเดิมส่งเป็น `{ "id": ... }` ห้ามส่งทั้ง `id` และ `path` และห้ามส่ง `url`
 - รูปเดิม (`id`) ต้องเป็นรูปของสินค้าตัวนี้เท่านั้น (`WHERE id IN (...) AND productId = :id`) ถ้าไม่ใช่ ตอบ 400
 - `POST /uploads/presign` บันทึกแถวในตาราง `Upload` (`path`, `uploadedBy`, `status: PENDING`, `expiresAt`) ตอนบันทึกสินค้า `path` ต้องตรงกับแถวที่เป็น `PENDING`, ยังไม่หมดอายุ และอัปโหลดโดยผู้ใช้คนเดียวกัน จากนั้นเปลี่ยนเป็น `USED`
-- backend ตรวจว่าไฟล์มีอยู่จริง แล้วอ่าน `width`/`height` จากไฟล์เอง (ไม่เชื่อค่าจาก client) จากนั้นย้ายไฟล์ไปที่ `products/<productId>/<imageId>.<ext>`
-- ตั้ง lifecycle rule ให้ storage ลบไฟล์ใน `tmp/uploads/` ที่เก่ากว่า 24 ชั่วโมง ไฟล์ที่อัปโหลดแล้วไม่ได้ใช้จะถูกลบเอง
+- backend ตรวจว่าไฟล์มีอยู่จริง แล้วอ่าน `width`/`height` จากไฟล์เอง (ไม่เชื่อค่าจาก client) จากนั้น `storage.copy()` ไฟล์ไปที่ `products/<productId>/<imageId>.<ext>` บันทึกฐานข้อมูล แล้วค่อย `storage.remove()` ไฟล์ใน tmp
+- Supabase Storage ไม่มี lifecycle rule ต้องมี job ลบไฟล์ `tmp/uploads/` ที่เป็น `PENDING` เกิน 24 ชั่วโมง โดยเรียก `storage.remove([...])` (ห้ามลบแถวใน `storage.objects` ด้วย SQL ตรงๆ เพราะไฟล์จริงจะค้างอยู่)
+- ตั้งค่า bucket: `allowedMimeTypes` = jpeg/png/webp, `fileSizeLimit` เช่น 5MB และไม่เปิด policy ให้ insert ใน `storage.objects` แบบสาธารณะ จะได้อัปโหลดได้เฉพาะผ่าน signed URL
 - รูปหลักมี 1–5 รูป และกลุ่มรูปแต่ละกลุ่มมี 0–5 รูป `sortOrder` อยู่ระหว่าง 0–4 และไม่ซ้ำกัน
 - กลุ่มที่ไม่มีรูปไม่ต้องส่ง หน้าร้านจะใช้รูปหลักแทน

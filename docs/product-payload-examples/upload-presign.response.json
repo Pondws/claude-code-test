@@ -1,22 +1,17 @@
 {
+  "bucket": "product-images",
   "uploads": [
     {
       "path": "tmp/uploads/3f6c1e2a-8d4b-4c7e-9a21-5b0d7e6f1a01.jpg",
-      "uploadUrl": "https://storage.example.com/tmp/uploads/3f6c1e2a-8d4b-4c7e-9a21-5b0d7e6f1a01.jpg?X-Amz-Signature=...",
-      "method": "PUT",
-      "headers": {
-        "Content-Type": "image/jpeg"
-      },
-      "expiresAt": "2026-11-25T10:15:00Z"
+      "token": "<token จาก createSignedUploadUrl>",
+      "signedUrl": "https://<project>.supabase.co/storage/v1/object/upload/sign/product-images/tmp/uploads/3f6c1e2a-8d4b-4c7e-9a21-5b0d7e6f1a01.jpg?token=...",
+      "expiresAt": "2026-11-25T12:00:00Z"
     },
     {
       "path": "tmp/uploads/9b2d4f6a-1c3e-4a5b-8d7f-0e1a2b3c4d02.jpg",
-      "uploadUrl": "https://storage.example.com/tmp/uploads/9b2d4f6a-1c3e-4a5b-8d7f-0e1a2b3c4d02.jpg?X-Amz-Signature=...",
-      "method": "PUT",
-      "headers": {
-        "Content-Type": "image/jpeg"
-      },
-      "expiresAt": "2026-11-25T10:15:00Z"
+      "token": "<token จาก createSignedUploadUrl>",
+      "signedUrl": "https://<project>.supabase.co/storage/v1/object/upload/sign/product-images/tmp/uploads/9b2d4f6a-1c3e-4a5b-8d7f-0e1a2b3c4d02.jpg?token=...",
+      "expiresAt": "2026-11-25T12:00:00Z"
     }
   ]
 }
