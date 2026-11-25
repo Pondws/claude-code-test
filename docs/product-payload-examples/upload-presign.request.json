@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "fileName": "tee-black-front.jpg",
+      "contentType": "image/jpeg",
+      "size": 345678
+    },
+    {
+      "fileName": "tee-black-back.jpg",
+      "contentType": "image/jpeg",
+      "size": 298112
+    }
+  ]
+}

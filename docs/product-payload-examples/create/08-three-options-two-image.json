@@ -7,23 +7,28 @@
   "tagIds": [],
   "images": [
     {
-      "path": "products/shirt-main-1.jpg",
+      "path": "tmp/uploads/shirt-main-1.jpg",
+      "alt": "เสื้อเชิ้ตลาย รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "products/shirt-main-2.jpg",
+      "path": "tmp/uploads/shirt-main-2.jpg",
+      "alt": "เสื้อเชิ้ตลาย รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "products/shirt-main-3.jpg",
+      "path": "tmp/uploads/shirt-main-3.jpg",
+      "alt": "เสื้อเชิ้ตลาย รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "products/shirt-main-4.jpg",
+      "path": "tmp/uploads/shirt-main-4.jpg",
+      "alt": "เสื้อเชิ้ตลาย รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "products/shirt-main-5.jpg",
+      "path": "tmp/uploads/shirt-main-5.jpg",
+      "alt": "เสื้อเชิ้ตลาย รูปที่ 5",
       "sortOrder": 4
     }
   ],
@@ -61,23 +66,28 @@
       ],
       "images": [
         {
-          "path": "products/shirt-black-stripe-1.jpg",
+          "path": "tmp/uploads/shirt-black-stripe-1.jpg",
+          "alt": "เชิ้ตดำลายทาง รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "products/shirt-black-stripe-2.jpg",
+          "path": "tmp/uploads/shirt-black-stripe-2.jpg",
+          "alt": "เชิ้ตดำลายทาง รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "products/shirt-black-stripe-3.jpg",
+          "path": "tmp/uploads/shirt-black-stripe-3.jpg",
+          "alt": "เชิ้ตดำลายทาง รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "products/shirt-black-stripe-4.jpg",
+          "path": "tmp/uploads/shirt-black-stripe-4.jpg",
+          "alt": "เชิ้ตดำลายทาง รูปที่ 4",
           "sortOrder": 3
         },
         {
-          "path": "products/shirt-black-stripe-5.jpg",
+          "path": "tmp/uploads/shirt-black-stripe-5.jpg",
+          "alt": "เชิ้ตดำลายทาง รูปที่ 5",
           "sortOrder": 4
         }
       ]
@@ -89,23 +99,28 @@
       ],
       "images": [
         {
-          "path": "products/shirt-black-dot-1.jpg",
+          "path": "tmp/uploads/shirt-black-dot-1.jpg",
+          "alt": "เชิ้ตดำลายจุด รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "products/shirt-black-dot-2.jpg",
+          "path": "tmp/uploads/shirt-black-dot-2.jpg",
+          "alt": "เชิ้ตดำลายจุด รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "products/shirt-black-dot-3.jpg",
+          "path": "tmp/uploads/shirt-black-dot-3.jpg",
+          "alt": "เชิ้ตดำลายจุด รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "products/shirt-black-dot-4.jpg",
+          "path": "tmp/uploads/shirt-black-dot-4.jpg",
+          "alt": "เชิ้ตดำลายจุด รูปที่ 4",
           "sortOrder": 3
         },
         {
-          "path": "products/shirt-black-dot-5.jpg",
+          "path": "tmp/uploads/shirt-black-dot-5.jpg",
+          "alt": "เชิ้ตดำลายจุด รูปที่ 5",
           "sortOrder": 4
         }
       ]
@@ -117,25 +132,21 @@
       ],
       "images": [
         {
-          "path": "products/shirt-red-stripe-1.jpg",
+          "path": "tmp/uploads/shirt-red-stripe-1.jpg",
+          "alt": "เชิ้ตแดงลายทาง รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "products/shirt-red-stripe-2.jpg",
+          "path": "tmp/uploads/shirt-red-stripe-2.jpg",
+          "alt": "เชิ้ตแดงลายทาง รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "products/shirt-red-stripe-3.jpg",
+          "path": "tmp/uploads/shirt-red-stripe-3.jpg",
+          "alt": "เชิ้ตแดงลายทาง รูปที่ 3",
           "sortOrder": 2
         }
       ]
-    },
-    {
-      "variantIds": [
-        "val-red",
-        "val-dot"
-      ],
-      "images": []
     }
   ],
   "skus": [
@@ -148,7 +159,7 @@
       "sku": "SHIRT-BLK-STR-COT",
       "price": "790.00",
       "compareAtPrice": null,
-      "stock": 4,
+      "initialStock": 4,
       "weightGrams": 250,
       "status": "ACTIVE"
     },
@@ -161,7 +172,7 @@
       "sku": "SHIRT-BLK-STR-POL",
       "price": "590.00",
       "compareAtPrice": null,
-      "stock": 6,
+      "initialStock": 6,
       "weightGrams": 230,
       "status": "ACTIVE"
     },
@@ -174,7 +185,7 @@
       "sku": "SHIRT-BLK-DOT-COT",
       "price": "790.00",
       "compareAtPrice": null,
-      "stock": 2,
+      "initialStock": 2,
       "weightGrams": 250,
       "status": "ACTIVE"
     },
@@ -187,7 +198,7 @@
       "sku": "SHIRT-BLK-DOT-POL",
       "price": "590.00",
       "compareAtPrice": null,
-      "stock": 5,
+      "initialStock": 5,
       "weightGrams": 230,
       "status": "ACTIVE"
     },
@@ -200,7 +211,7 @@
       "sku": "SHIRT-RED-STR-COT",
       "price": "790.00",
       "compareAtPrice": null,
-      "stock": 3,
+      "initialStock": 3,
       "weightGrams": 250,
       "status": "ACTIVE"
     },
@@ -213,7 +224,7 @@
       "sku": "SHIRT-RED-STR-POL",
       "price": "590.00",
       "compareAtPrice": null,
-      "stock": 0,
+      "initialStock": 0,
       "weightGrams": 230,
       "status": "INACTIVE"
     },
@@ -226,7 +237,7 @@
       "sku": "SHIRT-RED-DOT-COT",
       "price": "790.00",
       "compareAtPrice": null,
-      "stock": 1,
+      "initialStock": 1,
       "weightGrams": 250,
       "status": "ACTIVE"
     },
@@ -239,7 +250,7 @@
       "sku": "SHIRT-RED-DOT-POL",
       "price": "590.00",
       "compareAtPrice": null,
-      "stock": 7,
+      "initialStock": 7,
       "weightGrams": 230,
       "status": "ACTIVE"
     }

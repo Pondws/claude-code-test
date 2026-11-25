@@ -7,23 +7,28 @@
   "tagIds": [],
   "images": [
     {
-      "path": "products/tee-main-1.jpg",
+      "path": "tmp/uploads/tee-main-1.jpg",
+      "alt": "เสื้อยืด Basic Cotton รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "products/tee-main-2.jpg",
+      "path": "tmp/uploads/tee-main-2.jpg",
+      "alt": "เสื้อยืด Basic Cotton รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "products/tee-main-3.jpg",
+      "path": "tmp/uploads/tee-main-3.jpg",
+      "alt": "เสื้อยืด Basic Cotton รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "products/tee-main-4.jpg",
+      "path": "tmp/uploads/tee-main-4.jpg",
+      "alt": "เสื้อยืด Basic Cotton รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "products/tee-main-5.jpg",
+      "path": "tmp/uploads/tee-main-5.jpg",
+      "alt": "เสื้อยืด Basic Cotton รูปที่ 5",
       "sortOrder": 4
     }
   ],
@@ -52,23 +57,28 @@
       ],
       "images": [
         {
-          "path": "products/tee-black-1.jpg",
+          "path": "tmp/uploads/tee-black-1.jpg",
+          "alt": "เสื้อยืดสีดำ รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "products/tee-black-2.jpg",
+          "path": "tmp/uploads/tee-black-2.jpg",
+          "alt": "เสื้อยืดสีดำ รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "products/tee-black-3.jpg",
+          "path": "tmp/uploads/tee-black-3.jpg",
+          "alt": "เสื้อยืดสีดำ รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "products/tee-black-4.jpg",
+          "path": "tmp/uploads/tee-black-4.jpg",
+          "alt": "เสื้อยืดสีดำ รูปที่ 4",
           "sortOrder": 3
         },
         {
-          "path": "products/tee-black-5.jpg",
+          "path": "tmp/uploads/tee-black-5.jpg",
+          "alt": "เสื้อยืดสีดำ รูปที่ 5",
           "sortOrder": 4
         }
       ]
@@ -79,11 +89,13 @@
       ],
       "images": [
         {
-          "path": "products/tee-red-1.jpg",
+          "path": "tmp/uploads/tee-red-1.jpg",
+          "alt": "เสื้อยืดสีแดง รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "products/tee-red-2.jpg",
+          "path": "tmp/uploads/tee-red-2.jpg",
+          "alt": "เสื้อยืดสีแดง รูปที่ 2",
           "sortOrder": 1
         }
       ]
@@ -98,7 +110,7 @@
       "sku": "TEE-BLACK-M",
       "price": "590.00",
       "compareAtPrice": "790.00",
-      "stock": 12,
+      "initialStock": 12,
       "weightGrams": 220,
       "status": "ACTIVE"
     },
@@ -110,7 +122,7 @@
       "sku": "TEE-BLACK-L",
       "price": "590.00",
       "compareAtPrice": null,
-      "stock": 8,
+      "initialStock": 8,
       "weightGrams": 240,
       "status": "ACTIVE"
     },
@@ -122,7 +134,7 @@
       "sku": "TEE-RED-M",
       "price": "590.00",
       "compareAtPrice": null,
-      "stock": 0,
+      "initialStock": 0,
       "weightGrams": 220,
       "status": "INACTIVE"
     },
@@ -134,7 +146,7 @@
       "sku": "TEE-RED-L",
       "price": "590.00",
       "compareAtPrice": null,
-      "stock": 5,
+      "initialStock": 5,
       "weightGrams": null,
       "status": "ACTIVE"
     }

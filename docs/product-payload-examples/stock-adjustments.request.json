@@ -1,0 +1,22 @@
+{
+  "adjustments": [
+    {
+      "skuId": "sku-tee-black-m",
+      "delta": 20,
+      "reason": "RESTOCK",
+      "note": "รับของล็อตใหม่"
+    },
+    {
+      "skuId": "sku-tee-red-l",
+      "delta": -2,
+      "reason": "DAMAGED",
+      "note": "ผ้าขาด 2 ตัว"
+    },
+    {
+      "skuId": "sku-tee-black-l",
+      "delta": -1,
+      "reason": "COUNT_CORRECTION",
+      "note": "นับสต็อกประจำเดือน"
+    }
+  ]
+}

@@ -7,23 +7,28 @@
   "tagIds": [],
   "images": [
     {
-      "path": "products/scarf-main-1.jpg",
+      "path": "tmp/uploads/scarf-main-1.jpg",
+      "alt": "ผ้าพันคอ รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "products/scarf-main-2.jpg",
+      "path": "tmp/uploads/scarf-main-2.jpg",
+      "alt": "ผ้าพันคอ รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "products/scarf-main-3.jpg",
+      "path": "tmp/uploads/scarf-main-3.jpg",
+      "alt": "ผ้าพันคอ รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "products/scarf-main-4.jpg",
+      "path": "tmp/uploads/scarf-main-4.jpg",
+      "alt": "ผ้าพันคอ รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "products/scarf-main-5.jpg",
+      "path": "tmp/uploads/scarf-main-5.jpg",
+      "alt": "ผ้าพันคอ รูปที่ 5",
       "sortOrder": 4
     }
   ],
@@ -53,23 +58,28 @@
       ],
       "images": [
         {
-          "path": "products/scarf-black-stripe-1.jpg",
+          "path": "tmp/uploads/scarf-black-stripe-1.jpg",
+          "alt": "ผ้าพันคอดำลายทาง รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "products/scarf-black-stripe-2.jpg",
+          "path": "tmp/uploads/scarf-black-stripe-2.jpg",
+          "alt": "ผ้าพันคอดำลายทาง รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "products/scarf-black-stripe-3.jpg",
+          "path": "tmp/uploads/scarf-black-stripe-3.jpg",
+          "alt": "ผ้าพันคอดำลายทาง รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "products/scarf-black-stripe-4.jpg",
+          "path": "tmp/uploads/scarf-black-stripe-4.jpg",
+          "alt": "ผ้าพันคอดำลายทาง รูปที่ 4",
           "sortOrder": 3
         },
         {
-          "path": "products/scarf-black-stripe-5.jpg",
+          "path": "tmp/uploads/scarf-black-stripe-5.jpg",
+          "alt": "ผ้าพันคอดำลายทาง รูปที่ 5",
           "sortOrder": 4
         }
       ]
@@ -81,19 +91,23 @@
       ],
       "images": [
         {
-          "path": "products/scarf-black-dot-1.jpg",
+          "path": "tmp/uploads/scarf-black-dot-1.jpg",
+          "alt": "ผ้าพันคอดำลายจุด รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "products/scarf-black-dot-2.jpg",
+          "path": "tmp/uploads/scarf-black-dot-2.jpg",
+          "alt": "ผ้าพันคอดำลายจุด รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "products/scarf-black-dot-3.jpg",
+          "path": "tmp/uploads/scarf-black-dot-3.jpg",
+          "alt": "ผ้าพันคอดำลายจุด รูปที่ 3",
           "sortOrder": 2
         },
         {
-          "path": "products/scarf-black-dot-4.jpg",
+          "path": "tmp/uploads/scarf-black-dot-4.jpg",
+          "alt": "ผ้าพันคอดำลายจุด รูปที่ 4",
           "sortOrder": 3
         }
       ]
@@ -105,15 +119,18 @@
       ],
       "images": [
         {
-          "path": "products/scarf-red-stripe-1.jpg",
+          "path": "tmp/uploads/scarf-red-stripe-1.jpg",
+          "alt": "ผ้าพันคอแดงลายทาง รูปที่ 1",
           "sortOrder": 0
         },
         {
-          "path": "products/scarf-red-stripe-2.jpg",
+          "path": "tmp/uploads/scarf-red-stripe-2.jpg",
+          "alt": "ผ้าพันคอแดงลายทาง รูปที่ 2",
           "sortOrder": 1
         },
         {
-          "path": "products/scarf-red-stripe-3.jpg",
+          "path": "tmp/uploads/scarf-red-stripe-3.jpg",
+          "alt": "ผ้าพันคอแดงลายทาง รูปที่ 3",
           "sortOrder": 2
         }
       ]
@@ -125,7 +142,8 @@
       ],
       "images": [
         {
-          "path": "products/scarf-red-dot-1.jpg",
+          "path": "tmp/uploads/scarf-red-dot-1.jpg",
+          "alt": "ผ้าพันคอแดงลายจุด รูปที่ 1",
           "sortOrder": 0
         }
       ]
@@ -140,7 +158,7 @@
       "sku": "SCARF-BLACK-STRIPE",
       "price": "350.00",
       "compareAtPrice": null,
-      "stock": 5,
+      "initialStock": 5,
       "weightGrams": 120,
       "status": "ACTIVE"
     },
@@ -152,7 +170,7 @@
       "sku": "SCARF-BLACK-DOT",
       "price": "350.00",
       "compareAtPrice": null,
-      "stock": 3,
+      "initialStock": 3,
       "weightGrams": 120,
       "status": "ACTIVE"
     },
@@ -164,7 +182,7 @@
       "sku": "SCARF-RED-STRIPE",
       "price": "350.00",
       "compareAtPrice": null,
-      "stock": 8,
+      "initialStock": 8,
       "weightGrams": 120,
       "status": "ACTIVE"
     },
@@ -176,7 +194,7 @@
       "sku": "SCARF-RED-DOT",
       "price": "350.00",
       "compareAtPrice": null,
-      "stock": 0,
+      "initialStock": 0,
       "weightGrams": 120,
       "status": "ACTIVE"
     }

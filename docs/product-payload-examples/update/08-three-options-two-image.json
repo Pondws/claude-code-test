@@ -1,0 +1,269 @@
+{
+  "name": "เสื้อเชิ้ตลาย",
+  "slug": "pattern-shirt",
+  "description": "",
+  "status": "ACTIVE",
+  "categoryId": "5f1c2a7e-3b4d-4e8f-9a10-2c3d4e5f6a7b",
+  "tagIds": [],
+  "images": [
+    {
+      "id": "img-shirt-main-1",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-shirt-main-2",
+      "sortOrder": 1
+    },
+    {
+      "id": "img-shirt-main-3",
+      "sortOrder": 2
+    },
+    {
+      "id": "img-shirt-main-4",
+      "sortOrder": 3
+    },
+    {
+      "id": "img-shirt-main-5",
+      "sortOrder": 4
+    }
+  ],
+  "options": [
+    {
+      "productVariantId": "opt-color",
+      "showImage": true,
+      "variantIds": [
+        "val-black",
+        "val-red"
+      ]
+    },
+    {
+      "productVariantId": "opt-pattern",
+      "showImage": true,
+      "variantIds": [
+        "val-stripe",
+        "val-dot"
+      ]
+    },
+    {
+      "productVariantId": "opt-material",
+      "showImage": false,
+      "variantIds": [
+        "val-cotton",
+        "val-poly"
+      ]
+    }
+  ],
+  "imageGroups": [
+    {
+      "variantIds": [
+        "val-black",
+        "val-stripe"
+      ],
+      "images": [
+        {
+          "id": "img-shirt-black-stripe-1",
+          "sortOrder": 0
+        },
+        {
+          "id": "img-shirt-black-stripe-2",
+          "sortOrder": 1
+        },
+        {
+          "id": "img-shirt-black-stripe-3",
+          "sortOrder": 2
+        },
+        {
+          "id": "img-shirt-black-stripe-4",
+          "sortOrder": 3
+        },
+        {
+          "id": "img-shirt-black-stripe-5",
+          "sortOrder": 4
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-black",
+        "val-dot"
+      ],
+      "images": [
+        {
+          "id": "img-shirt-black-dot-1",
+          "sortOrder": 0
+        },
+        {
+          "id": "img-shirt-black-dot-2",
+          "sortOrder": 1
+        },
+        {
+          "id": "img-shirt-black-dot-3",
+          "sortOrder": 2
+        },
+        {
+          "id": "img-shirt-black-dot-4",
+          "sortOrder": 3
+        },
+        {
+          "id": "img-shirt-black-dot-5",
+          "sortOrder": 4
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-red",
+        "val-stripe"
+      ],
+      "images": [
+        {
+          "id": "img-shirt-red-stripe-1",
+          "sortOrder": 0
+        },
+        {
+          "id": "img-shirt-red-stripe-2",
+          "sortOrder": 1
+        },
+        {
+          "id": "img-shirt-red-stripe-3",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-red",
+        "val-dot"
+      ],
+      "images": [
+        {
+          "path": "tmp/uploads/shirt-red-dot-1.jpg",
+          "alt": "เชิ้ตแดงลายจุด รูปที่ 1",
+          "sortOrder": 0
+        },
+        {
+          "path": "tmp/uploads/shirt-red-dot-2.jpg",
+          "alt": "เชิ้ตแดงลายจุด รูปที่ 2",
+          "sortOrder": 1
+        },
+        {
+          "path": "tmp/uploads/shirt-red-dot-3.jpg",
+          "alt": "เชิ้ตแดงลายจุด รูปที่ 3",
+          "sortOrder": 2
+        },
+        {
+          "path": "tmp/uploads/shirt-red-dot-4.jpg",
+          "alt": "เชิ้ตแดงลายจุด รูปที่ 4",
+          "sortOrder": 3
+        }
+      ]
+    }
+  ],
+  "skus": [
+    {
+      "id": "sku-shirt-blk-str-cot",
+      "variantIds": [
+        "val-black",
+        "val-stripe",
+        "val-cotton"
+      ],
+      "sku": "SHIRT-BLK-STR-COT",
+      "price": "790.00",
+      "compareAtPrice": null,
+      "weightGrams": 250,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-shirt-blk-str-pol",
+      "variantIds": [
+        "val-black",
+        "val-stripe",
+        "val-poly"
+      ],
+      "sku": "SHIRT-BLK-STR-POL",
+      "price": "590.00",
+      "compareAtPrice": null,
+      "weightGrams": 230,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-shirt-blk-dot-cot",
+      "variantIds": [
+        "val-black",
+        "val-dot",
+        "val-cotton"
+      ],
+      "sku": "SHIRT-BLK-DOT-COT",
+      "price": "790.00",
+      "compareAtPrice": null,
+      "weightGrams": 250,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-shirt-blk-dot-pol",
+      "variantIds": [
+        "val-black",
+        "val-dot",
+        "val-poly"
+      ],
+      "sku": "SHIRT-BLK-DOT-POL",
+      "price": "590.00",
+      "compareAtPrice": null,
+      "weightGrams": 230,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-shirt-red-str-cot",
+      "variantIds": [
+        "val-red",
+        "val-stripe",
+        "val-cotton"
+      ],
+      "sku": "SHIRT-RED-STR-COT",
+      "price": "790.00",
+      "compareAtPrice": null,
+      "weightGrams": 250,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-shirt-red-str-pol",
+      "variantIds": [
+        "val-red",
+        "val-stripe",
+        "val-poly"
+      ],
+      "sku": "SHIRT-RED-STR-POL",
+      "price": "590.00",
+      "compareAtPrice": null,
+      "weightGrams": 230,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-shirt-red-dot-cot",
+      "variantIds": [
+        "val-red",
+        "val-dot",
+        "val-cotton"
+      ],
+      "sku": "SHIRT-RED-DOT-COT",
+      "price": "790.00",
+      "compareAtPrice": null,
+      "weightGrams": 250,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-shirt-red-dot-pol",
+      "variantIds": [
+        "val-red",
+        "val-dot",
+        "val-poly"
+      ],
+      "sku": "SHIRT-RED-DOT-POL",
+      "price": "590.00",
+      "compareAtPrice": null,
+      "weightGrams": 230,
+      "status": "ACTIVE"
+    }
+  ],
+  "version": 3
+}

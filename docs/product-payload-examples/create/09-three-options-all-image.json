@@ -1,0 +1,270 @@
+{
+  "name": "กระเป๋าสะพาย",
+  "slug": "shoulder-bag",
+  "description": "",
+  "status": "ACTIVE",
+  "categoryId": "5f1c2a7e-3b4d-4e8f-9a10-2c3d4e5f6a7b",
+  "tagIds": [],
+  "images": [
+    {
+      "path": "tmp/uploads/bag-main-1.jpg",
+      "alt": "กระเป๋าสะพาย รูปที่ 1",
+      "sortOrder": 0
+    },
+    {
+      "path": "tmp/uploads/bag-main-2.jpg",
+      "alt": "กระเป๋าสะพาย รูปที่ 2",
+      "sortOrder": 1
+    },
+    {
+      "path": "tmp/uploads/bag-main-3.jpg",
+      "alt": "กระเป๋าสะพาย รูปที่ 3",
+      "sortOrder": 2
+    },
+    {
+      "path": "tmp/uploads/bag-main-4.jpg",
+      "alt": "กระเป๋าสะพาย รูปที่ 4",
+      "sortOrder": 3
+    },
+    {
+      "path": "tmp/uploads/bag-main-5.jpg",
+      "alt": "กระเป๋าสะพาย รูปที่ 5",
+      "sortOrder": 4
+    }
+  ],
+  "options": [
+    {
+      "productVariantId": "opt-color",
+      "showImage": true,
+      "variantIds": [
+        "val-black",
+        "val-brown"
+      ]
+    },
+    {
+      "productVariantId": "opt-pattern",
+      "showImage": true,
+      "variantIds": [
+        "val-plain",
+        "val-stripe"
+      ]
+    },
+    {
+      "productVariantId": "opt-material",
+      "showImage": true,
+      "variantIds": [
+        "val-leather",
+        "val-canvas"
+      ]
+    }
+  ],
+  "imageGroups": [
+    {
+      "variantIds": [
+        "val-black",
+        "val-plain",
+        "val-leather"
+      ],
+      "images": [
+        {
+          "path": "tmp/uploads/bag-blk-pln-lea-1.jpg",
+          "alt": "กระเป๋าหนังดำ รูปที่ 1",
+          "sortOrder": 0
+        },
+        {
+          "path": "tmp/uploads/bag-blk-pln-lea-2.jpg",
+          "alt": "กระเป๋าหนังดำ รูปที่ 2",
+          "sortOrder": 1
+        },
+        {
+          "path": "tmp/uploads/bag-blk-pln-lea-3.jpg",
+          "alt": "กระเป๋าหนังดำ รูปที่ 3",
+          "sortOrder": 2
+        },
+        {
+          "path": "tmp/uploads/bag-blk-pln-lea-4.jpg",
+          "alt": "กระเป๋าหนังดำ รูปที่ 4",
+          "sortOrder": 3
+        },
+        {
+          "path": "tmp/uploads/bag-blk-pln-lea-5.jpg",
+          "alt": "กระเป๋าหนังดำ รูปที่ 5",
+          "sortOrder": 4
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-black",
+        "val-plain",
+        "val-canvas"
+      ],
+      "images": [
+        {
+          "path": "tmp/uploads/bag-blk-pln-can-1.jpg",
+          "alt": "กระเป๋าผ้าดำ รูปที่ 1",
+          "sortOrder": 0
+        },
+        {
+          "path": "tmp/uploads/bag-blk-pln-can-2.jpg",
+          "alt": "กระเป๋าผ้าดำ รูปที่ 2",
+          "sortOrder": 1
+        },
+        {
+          "path": "tmp/uploads/bag-blk-pln-can-3.jpg",
+          "alt": "กระเป๋าผ้าดำ รูปที่ 3",
+          "sortOrder": 2
+        },
+        {
+          "path": "tmp/uploads/bag-blk-pln-can-4.jpg",
+          "alt": "กระเป๋าผ้าดำ รูปที่ 4",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-black",
+        "val-stripe",
+        "val-canvas"
+      ],
+      "images": [
+        {
+          "path": "tmp/uploads/bag-blk-str-can-1.jpg",
+          "alt": "กระเป๋าผ้าดำลายทาง รูปที่ 1",
+          "sortOrder": 0
+        },
+        {
+          "path": "tmp/uploads/bag-blk-str-can-2.jpg",
+          "alt": "กระเป๋าผ้าดำลายทาง รูปที่ 2",
+          "sortOrder": 1
+        },
+        {
+          "path": "tmp/uploads/bag-blk-str-can-3.jpg",
+          "alt": "กระเป๋าผ้าดำลายทาง รูปที่ 3",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-brown",
+        "val-plain",
+        "val-leather"
+      ],
+      "images": [
+        {
+          "path": "tmp/uploads/bag-brn-pln-lea-1.jpg",
+          "alt": "กระเป๋าหนังน้ำตาล รูปที่ 1",
+          "sortOrder": 0
+        },
+        {
+          "path": "tmp/uploads/bag-brn-pln-lea-2.jpg",
+          "alt": "กระเป๋าหนังน้ำตาล รูปที่ 2",
+          "sortOrder": 1
+        },
+        {
+          "path": "tmp/uploads/bag-brn-pln-lea-3.jpg",
+          "alt": "กระเป๋าหนังน้ำตาล รูปที่ 3",
+          "sortOrder": 2
+        },
+        {
+          "path": "tmp/uploads/bag-brn-pln-lea-4.jpg",
+          "alt": "กระเป๋าหนังน้ำตาล รูปที่ 4",
+          "sortOrder": 3
+        },
+        {
+          "path": "tmp/uploads/bag-brn-pln-lea-5.jpg",
+          "alt": "กระเป๋าหนังน้ำตาล รูปที่ 5",
+          "sortOrder": 4
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-brown",
+        "val-stripe",
+        "val-canvas"
+      ],
+      "images": [
+        {
+          "path": "tmp/uploads/bag-brn-str-can-1.jpg",
+          "alt": "กระเป๋าผ้าน้ำตาลลายทาง รูปที่ 1",
+          "sortOrder": 0
+        },
+        {
+          "path": "tmp/uploads/bag-brn-str-can-2.jpg",
+          "alt": "กระเป๋าผ้าน้ำตาลลายทาง รูปที่ 2",
+          "sortOrder": 1
+        }
+      ]
+    }
+  ],
+  "skus": [
+    {
+      "variantIds": [
+        "val-black",
+        "val-plain",
+        "val-leather"
+      ],
+      "sku": "BAG-BLK-PLN-LEA",
+      "price": "2490.00",
+      "compareAtPrice": "2990.00",
+      "initialStock": 3,
+      "weightGrams": 800,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-black",
+        "val-plain",
+        "val-canvas"
+      ],
+      "sku": "BAG-BLK-PLN-CAN",
+      "price": "990.00",
+      "compareAtPrice": null,
+      "initialStock": 10,
+      "weightGrams": 500,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-black",
+        "val-stripe",
+        "val-canvas"
+      ],
+      "sku": "BAG-BLK-STR-CAN",
+      "price": "1090.00",
+      "compareAtPrice": null,
+      "initialStock": 6,
+      "weightGrams": 500,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-brown",
+        "val-plain",
+        "val-leather"
+      ],
+      "sku": "BAG-BRN-PLN-LEA",
+      "price": "2490.00",
+      "compareAtPrice": null,
+      "initialStock": 2,
+      "weightGrams": 800,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-brown",
+        "val-stripe",
+        "val-canvas"
+      ],
+      "sku": "BAG-BRN-STR-CAN",
+      "price": "1090.00",
+      "compareAtPrice": null,
+      "initialStock": 0,
+      "weightGrams": 500,
+      "status": "ACTIVE"
+    }
+  ]
+}

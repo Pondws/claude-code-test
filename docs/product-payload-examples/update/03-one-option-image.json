@@ -1,0 +1,142 @@
+{
+  "name": "เคสโทรศัพท์",
+  "slug": "phone-case",
+  "description": "",
+  "status": "ACTIVE",
+  "categoryId": "5f1c2a7e-3b4d-4e8f-9a10-2c3d4e5f6a7b",
+  "tagIds": [],
+  "images": [
+    {
+      "id": "img-case-main-1",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-case-main-2",
+      "sortOrder": 1
+    },
+    {
+      "id": "img-case-main-3",
+      "sortOrder": 2
+    },
+    {
+      "id": "img-case-main-4",
+      "sortOrder": 3
+    },
+    {
+      "id": "img-case-main-5",
+      "sortOrder": 4
+    }
+  ],
+  "options": [
+    {
+      "productVariantId": "opt-color",
+      "showImage": true,
+      "variantIds": [
+        "val-black",
+        "val-red",
+        "val-blue"
+      ]
+    }
+  ],
+  "imageGroups": [
+    {
+      "variantIds": [
+        "val-black"
+      ],
+      "images": [
+        {
+          "id": "img-case-black-1",
+          "sortOrder": 0
+        },
+        {
+          "id": "img-case-black-2",
+          "sortOrder": 1
+        },
+        {
+          "id": "img-case-black-3",
+          "sortOrder": 2
+        },
+        {
+          "id": "img-case-black-4",
+          "sortOrder": 3
+        },
+        {
+          "id": "img-case-black-5",
+          "sortOrder": 4
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-red"
+      ],
+      "images": [
+        {
+          "id": "img-case-red-1",
+          "sortOrder": 0
+        },
+        {
+          "id": "img-case-red-2",
+          "sortOrder": 1
+        },
+        {
+          "id": "img-case-red-3",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-blue"
+      ],
+      "images": [
+        {
+          "path": "tmp/uploads/case-blue-1.jpg",
+          "alt": "เคสสีน้ำเงิน รูปที่ 1",
+          "sortOrder": 0
+        },
+        {
+          "path": "tmp/uploads/case-blue-2.jpg",
+          "alt": "เคสสีน้ำเงิน รูปที่ 2",
+          "sortOrder": 1
+        }
+      ]
+    }
+  ],
+  "skus": [
+    {
+      "id": "sku-case-black",
+      "variantIds": [
+        "val-black"
+      ],
+      "sku": "CASE-BLACK",
+      "price": "190.00",
+      "compareAtPrice": "250.00",
+      "weightGrams": 30,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-case-red",
+      "variantIds": [
+        "val-red"
+      ],
+      "sku": "CASE-RED",
+      "price": "190.00",
+      "compareAtPrice": null,
+      "weightGrams": 30,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-case-blue",
+      "variantIds": [
+        "val-blue"
+      ],
+      "sku": "CASE-BLUE",
+      "price": "190.00",
+      "compareAtPrice": null,
+      "weightGrams": 30,
+      "status": "ACTIVE"
+    }
+  ],
+  "version": 3
+}

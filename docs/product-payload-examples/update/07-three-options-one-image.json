@@ -1,0 +1,202 @@
+{
+  "name": "กางเกงยีนส์",
+  "slug": "jeans",
+  "description": "",
+  "status": "ACTIVE",
+  "categoryId": "5f1c2a7e-3b4d-4e8f-9a10-2c3d4e5f6a7b",
+  "tagIds": [],
+  "images": [
+    {
+      "id": "img-jeans-main-1",
+      "sortOrder": 0
+    },
+    {
+      "id": "img-jeans-main-2",
+      "sortOrder": 1
+    },
+    {
+      "id": "img-jeans-main-3",
+      "sortOrder": 2
+    },
+    {
+      "id": "img-jeans-main-4",
+      "sortOrder": 3
+    },
+    {
+      "id": "img-jeans-main-5",
+      "sortOrder": 4
+    }
+  ],
+  "options": [
+    {
+      "productVariantId": "opt-color",
+      "showImage": true,
+      "variantIds": [
+        "val-blue",
+        "val-black"
+      ]
+    },
+    {
+      "productVariantId": "opt-size",
+      "showImage": false,
+      "variantIds": [
+        "val-30",
+        "val-32"
+      ]
+    },
+    {
+      "productVariantId": "opt-length",
+      "showImage": false,
+      "variantIds": [
+        "val-regular",
+        "val-long"
+      ]
+    }
+  ],
+  "imageGroups": [
+    {
+      "variantIds": [
+        "val-blue"
+      ],
+      "images": [
+        {
+          "id": "img-jeans-blue-1",
+          "sortOrder": 0
+        },
+        {
+          "id": "img-jeans-blue-2",
+          "sortOrder": 1
+        },
+        {
+          "id": "img-jeans-blue-3",
+          "sortOrder": 2
+        },
+        {
+          "id": "img-jeans-blue-4",
+          "sortOrder": 3
+        },
+        {
+          "id": "img-jeans-blue-5",
+          "sortOrder": 4
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-black"
+      ],
+      "images": [
+        {
+          "id": "img-jeans-black-1",
+          "sortOrder": 0
+        },
+        {
+          "id": "img-jeans-black-2",
+          "sortOrder": 1
+        },
+        {
+          "id": "img-jeans-black-3",
+          "sortOrder": 2
+        },
+        {
+          "id": "img-jeans-black-4",
+          "sortOrder": 3
+        }
+      ]
+    }
+  ],
+  "skus": [
+    {
+      "id": "sku-jeans-blue-30-r",
+      "variantIds": [
+        "val-blue",
+        "val-30",
+        "val-regular"
+      ],
+      "sku": "JEANS-BLUE-30-R",
+      "price": "1290.00",
+      "compareAtPrice": null,
+      "weightGrams": 600,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-jeans-blue-30-l",
+      "variantIds": [
+        "val-blue",
+        "val-30",
+        "val-long"
+      ],
+      "sku": "JEANS-BLUE-30-L",
+      "price": "1290.00",
+      "compareAtPrice": null,
+      "weightGrams": 620,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-jeans-blue-32-r",
+      "variantIds": [
+        "val-blue",
+        "val-32",
+        "val-regular"
+      ],
+      "sku": "JEANS-BLUE-32-R",
+      "price": "1290.00",
+      "compareAtPrice": null,
+      "weightGrams": 610,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-jeans-blue-32-l",
+      "variantIds": [
+        "val-blue",
+        "val-32",
+        "val-long"
+      ],
+      "sku": "JEANS-BLUE-32-L",
+      "price": "1290.00",
+      "compareAtPrice": null,
+      "weightGrams": 630,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-jeans-black-30-r",
+      "variantIds": [
+        "val-black",
+        "val-30",
+        "val-regular"
+      ],
+      "sku": "JEANS-BLACK-30-R",
+      "price": "1390.00",
+      "compareAtPrice": null,
+      "weightGrams": 600,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-jeans-black-30-l",
+      "variantIds": [
+        "val-black",
+        "val-30",
+        "val-long"
+      ],
+      "sku": "JEANS-BLACK-30-L",
+      "price": "1390.00",
+      "compareAtPrice": null,
+      "weightGrams": 620,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "sku-jeans-black-32-l",
+      "variantIds": [
+        "val-black",
+        "val-32",
+        "val-long"
+      ],
+      "sku": "JEANS-BLACK-32-L",
+      "price": "1390.00",
+      "compareAtPrice": null,
+      "weightGrams": 630,
+      "status": "ACTIVE"
+    }
+  ],
+  "version": 3
+}

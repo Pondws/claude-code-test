@@ -7,23 +7,23 @@
   "tagIds": [],
   "images": [
     {
-      "path": "products/bag-main-1.jpg",
+      "id": "img-bag-main-1",
       "sortOrder": 0
     },
     {
-      "path": "products/bag-main-2.jpg",
+      "id": "img-bag-main-2",
       "sortOrder": 1
     },
     {
-      "path": "products/bag-main-3.jpg",
+      "id": "img-bag-main-3",
       "sortOrder": 2
     },
     {
-      "path": "products/bag-main-4.jpg",
+      "id": "img-bag-main-4",
       "sortOrder": 3
     },
     {
-      "path": "products/bag-main-5.jpg",
+      "id": "img-bag-main-5",
       "sortOrder": 4
     }
   ],
@@ -62,23 +62,23 @@
       ],
       "images": [
         {
-          "path": "products/bag-blk-pln-lea-1.jpg",
+          "id": "img-bag-blk-pln-lea-1",
           "sortOrder": 0
         },
         {
-          "path": "products/bag-blk-pln-lea-2.jpg",
+          "id": "img-bag-blk-pln-lea-2",
           "sortOrder": 1
         },
         {
-          "path": "products/bag-blk-pln-lea-3.jpg",
+          "id": "img-bag-blk-pln-lea-3",
           "sortOrder": 2
         },
         {
-          "path": "products/bag-blk-pln-lea-4.jpg",
+          "id": "img-bag-blk-pln-lea-4",
           "sortOrder": 3
         },
         {
-          "path": "products/bag-blk-pln-lea-5.jpg",
+          "id": "img-bag-blk-pln-lea-5",
           "sortOrder": 4
         }
       ]
@@ -91,19 +91,19 @@
       ],
       "images": [
         {
-          "path": "products/bag-blk-pln-can-1.jpg",
+          "id": "img-bag-blk-pln-can-1",
           "sortOrder": 0
         },
         {
-          "path": "products/bag-blk-pln-can-2.jpg",
+          "id": "img-bag-blk-pln-can-2",
           "sortOrder": 1
         },
         {
-          "path": "products/bag-blk-pln-can-3.jpg",
+          "id": "img-bag-blk-pln-can-3",
           "sortOrder": 2
         },
         {
-          "path": "products/bag-blk-pln-can-4.jpg",
+          "id": "img-bag-blk-pln-can-4",
           "sortOrder": 3
         }
       ]
@@ -116,15 +116,15 @@
       ],
       "images": [
         {
-          "path": "products/bag-blk-str-can-1.jpg",
+          "id": "img-bag-blk-str-can-1",
           "sortOrder": 0
         },
         {
-          "path": "products/bag-blk-str-can-2.jpg",
+          "id": "img-bag-blk-str-can-2",
           "sortOrder": 1
         },
         {
-          "path": "products/bag-blk-str-can-3.jpg",
+          "id": "img-bag-blk-str-can-3",
           "sortOrder": 2
         }
       ]
@@ -137,23 +137,23 @@
       ],
       "images": [
         {
-          "path": "products/bag-brn-pln-lea-1.jpg",
+          "id": "img-bag-brn-pln-lea-1",
           "sortOrder": 0
         },
         {
-          "path": "products/bag-brn-pln-lea-2.jpg",
+          "id": "img-bag-brn-pln-lea-2",
           "sortOrder": 1
         },
         {
-          "path": "products/bag-brn-pln-lea-3.jpg",
+          "id": "img-bag-brn-pln-lea-3",
           "sortOrder": 2
         },
         {
-          "path": "products/bag-brn-pln-lea-4.jpg",
+          "id": "img-bag-brn-pln-lea-4",
           "sortOrder": 3
         },
         {
-          "path": "products/bag-brn-pln-lea-5.jpg",
+          "id": "img-bag-brn-pln-lea-5",
           "sortOrder": 4
         }
       ]
@@ -166,18 +166,43 @@
       ],
       "images": [
         {
-          "path": "products/bag-brn-str-can-1.jpg",
+          "id": "img-bag-brn-str-can-1",
           "sortOrder": 0
         },
         {
-          "path": "products/bag-brn-str-can-2.jpg",
+          "id": "img-bag-brn-str-can-2",
           "sortOrder": 1
+        }
+      ]
+    },
+    {
+      "variantIds": [
+        "val-brown",
+        "val-plain",
+        "val-canvas"
+      ],
+      "images": [
+        {
+          "path": "tmp/uploads/bag-brn-pln-can-1.jpg",
+          "alt": "กระเป๋าผ้าน้ำตาล รูปที่ 1",
+          "sortOrder": 0
+        },
+        {
+          "path": "tmp/uploads/bag-brn-pln-can-2.jpg",
+          "alt": "กระเป๋าผ้าน้ำตาล รูปที่ 2",
+          "sortOrder": 1
+        },
+        {
+          "path": "tmp/uploads/bag-brn-pln-can-3.jpg",
+          "alt": "กระเป๋าผ้าน้ำตาล รูปที่ 3",
+          "sortOrder": 2
         }
       ]
     }
   ],
   "skus": [
     {
+      "id": "sku-bag-blk-pln-lea",
       "variantIds": [
         "val-black",
         "val-plain",
@@ -186,11 +211,11 @@
       "sku": "BAG-BLK-PLN-LEA",
       "price": "2490.00",
       "compareAtPrice": "2990.00",
-      "stock": 3,
       "weightGrams": 800,
       "status": "ACTIVE"
     },
     {
+      "id": "sku-bag-blk-pln-can",
       "variantIds": [
         "val-black",
         "val-plain",
@@ -199,11 +224,11 @@
       "sku": "BAG-BLK-PLN-CAN",
       "price": "990.00",
       "compareAtPrice": null,
-      "stock": 10,
       "weightGrams": 500,
       "status": "ACTIVE"
     },
     {
+      "id": "sku-bag-blk-str-can",
       "variantIds": [
         "val-black",
         "val-stripe",
@@ -212,11 +237,11 @@
       "sku": "BAG-BLK-STR-CAN",
       "price": "1090.00",
       "compareAtPrice": null,
-      "stock": 6,
       "weightGrams": 500,
       "status": "ACTIVE"
     },
     {
+      "id": "sku-bag-brn-pln-lea",
       "variantIds": [
         "val-brown",
         "val-plain",
@@ -225,11 +250,11 @@
       "sku": "BAG-BRN-PLN-LEA",
       "price": "2490.00",
       "compareAtPrice": null,
-      "stock": 2,
       "weightGrams": 800,
       "status": "ACTIVE"
     },
     {
+      "id": "sku-bag-brn-str-can",
       "variantIds": [
         "val-brown",
         "val-stripe",
@@ -238,9 +263,22 @@
       "sku": "BAG-BRN-STR-CAN",
       "price": "1090.00",
       "compareAtPrice": null,
-      "stock": 0,
+      "weightGrams": 500,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-brown",
+        "val-plain",
+        "val-canvas"
+      ],
+      "sku": "BAG-BRN-PLN-CAN",
+      "price": "990.00",
+      "compareAtPrice": null,
+      "initialStock": 8,
       "weightGrams": 500,
       "status": "ACTIVE"
     }
-  ]
+  ],
+  "version": 3
 }

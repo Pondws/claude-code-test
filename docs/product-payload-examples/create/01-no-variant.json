@@ -7,23 +7,28 @@
   "tagIds": [],
   "images": [
     {
-      "path": "products/mug-main-1.jpg",
+      "path": "tmp/uploads/mug-main-1.jpg",
+      "alt": "แก้วเซรามิก รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "products/mug-main-2.jpg",
+      "path": "tmp/uploads/mug-main-2.jpg",
+      "alt": "แก้วเซรามิก รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "products/mug-main-3.jpg",
+      "path": "tmp/uploads/mug-main-3.jpg",
+      "alt": "แก้วเซรามิก รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "products/mug-main-4.jpg",
+      "path": "tmp/uploads/mug-main-4.jpg",
+      "alt": "แก้วเซรามิก รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "products/mug-main-5.jpg",
+      "path": "tmp/uploads/mug-main-5.jpg",
+      "alt": "แก้วเซรามิก รูปที่ 5",
       "sortOrder": 4
     }
   ],
@@ -35,7 +40,7 @@
       "sku": "CERAMIC-MUG",
       "price": "250.00",
       "compareAtPrice": null,
-      "stock": 30,
+      "initialStock": 30,
       "weightGrams": 350,
       "status": "ACTIVE"
     }

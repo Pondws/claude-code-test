@@ -7,23 +7,23 @@
   "tagIds": [],
   "images": [
     {
-      "path": "products/slacks-main-1.jpg",
+      "id": "img-slacks-main-1",
       "sortOrder": 0
     },
     {
-      "path": "products/slacks-main-2.jpg",
+      "id": "img-slacks-main-2",
       "sortOrder": 1
     },
     {
-      "path": "products/slacks-main-3.jpg",
+      "id": "img-slacks-main-3",
       "sortOrder": 2
     },
     {
-      "path": "products/slacks-main-4.jpg",
+      "id": "img-slacks-main-4",
       "sortOrder": 3
     },
     {
-      "path": "products/slacks-main-5.jpg",
+      "id": "img-slacks-main-5",
       "sortOrder": 4
     }
   ],
@@ -48,6 +48,7 @@
   "imageGroups": [],
   "skus": [
     {
+      "id": "sku-slacks-30-r",
       "variantIds": [
         "val-30",
         "val-regular"
@@ -55,11 +56,11 @@
       "sku": "SLACKS-30-R",
       "price": "890.00",
       "compareAtPrice": null,
-      "stock": 6,
       "weightGrams": 400,
       "status": "ACTIVE"
     },
     {
+      "id": "sku-slacks-30-l",
       "variantIds": [
         "val-30",
         "val-long"
@@ -67,11 +68,11 @@
       "sku": "SLACKS-30-L",
       "price": "890.00",
       "compareAtPrice": null,
-      "stock": 4,
       "weightGrams": 420,
       "status": "ACTIVE"
     },
     {
+      "id": "sku-slacks-32-r",
       "variantIds": [
         "val-32",
         "val-regular"
@@ -79,9 +80,21 @@
       "sku": "SLACKS-32-R",
       "price": "890.00",
       "compareAtPrice": null,
-      "stock": 9,
       "weightGrams": 410,
       "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-32",
+        "val-long"
+      ],
+      "sku": "SLACKS-32-L",
+      "price": "890.00",
+      "compareAtPrice": null,
+      "initialStock": 5,
+      "weightGrams": 430,
+      "status": "ACTIVE"
     }
-  ]
+  ],
+  "version": 3
 }

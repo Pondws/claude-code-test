@@ -7,23 +7,28 @@
   "tagIds": [],
   "images": [
     {
-      "path": "products/socks-main-1.jpg",
+      "path": "tmp/uploads/socks-main-1.jpg",
+      "alt": "ถุงเท้าข้อสั้น รูปที่ 1",
       "sortOrder": 0
     },
     {
-      "path": "products/socks-main-2.jpg",
+      "path": "tmp/uploads/socks-main-2.jpg",
+      "alt": "ถุงเท้าข้อสั้น รูปที่ 2",
       "sortOrder": 1
     },
     {
-      "path": "products/socks-main-3.jpg",
+      "path": "tmp/uploads/socks-main-3.jpg",
+      "alt": "ถุงเท้าข้อสั้น รูปที่ 3",
       "sortOrder": 2
     },
     {
-      "path": "products/socks-main-4.jpg",
+      "path": "tmp/uploads/socks-main-4.jpg",
+      "alt": "ถุงเท้าข้อสั้น รูปที่ 4",
       "sortOrder": 3
     },
     {
-      "path": "products/socks-main-5.jpg",
+      "path": "tmp/uploads/socks-main-5.jpg",
+      "alt": "ถุงเท้าข้อสั้น รูปที่ 5",
       "sortOrder": 4
     }
   ],
@@ -47,7 +52,7 @@
       "sku": "SOCKS-S",
       "price": "99.00",
       "compareAtPrice": null,
-      "stock": 20,
+      "initialStock": 20,
       "weightGrams": 40,
       "status": "ACTIVE"
     },
@@ -58,7 +63,7 @@
       "sku": "SOCKS-M",
       "price": "99.00",
       "compareAtPrice": null,
-      "stock": 15,
+      "initialStock": 15,
       "weightGrams": 45,
       "status": "ACTIVE"
     },
@@ -69,7 +74,7 @@
       "sku": "SOCKS-L",
       "price": "109.00",
       "compareAtPrice": null,
-      "stock": 0,
+      "initialStock": 0,
       "weightGrams": 50,
       "status": "ACTIVE"
     }

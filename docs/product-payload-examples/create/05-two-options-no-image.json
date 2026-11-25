@@ -1,0 +1,92 @@
+{
+  "name": "กางเกงสแล็ค",
+  "slug": "slacks",
+  "description": "",
+  "status": "ACTIVE",
+  "categoryId": "5f1c2a7e-3b4d-4e8f-9a10-2c3d4e5f6a7b",
+  "tagIds": [],
+  "images": [
+    {
+      "path": "tmp/uploads/slacks-main-1.jpg",
+      "alt": "กางเกงสแล็ค รูปที่ 1",
+      "sortOrder": 0
+    },
+    {
+      "path": "tmp/uploads/slacks-main-2.jpg",
+      "alt": "กางเกงสแล็ค รูปที่ 2",
+      "sortOrder": 1
+    },
+    {
+      "path": "tmp/uploads/slacks-main-3.jpg",
+      "alt": "กางเกงสแล็ค รูปที่ 3",
+      "sortOrder": 2
+    },
+    {
+      "path": "tmp/uploads/slacks-main-4.jpg",
+      "alt": "กางเกงสแล็ค รูปที่ 4",
+      "sortOrder": 3
+    },
+    {
+      "path": "tmp/uploads/slacks-main-5.jpg",
+      "alt": "กางเกงสแล็ค รูปที่ 5",
+      "sortOrder": 4
+    }
+  ],
+  "options": [
+    {
+      "productVariantId": "opt-size",
+      "showImage": false,
+      "variantIds": [
+        "val-30",
+        "val-32"
+      ]
+    },
+    {
+      "productVariantId": "opt-length",
+      "showImage": false,
+      "variantIds": [
+        "val-regular",
+        "val-long"
+      ]
+    }
+  ],
+  "imageGroups": [],
+  "skus": [
+    {
+      "variantIds": [
+        "val-30",
+        "val-regular"
+      ],
+      "sku": "SLACKS-30-R",
+      "price": "890.00",
+      "compareAtPrice": null,
+      "initialStock": 6,
+      "weightGrams": 400,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-30",
+        "val-long"
+      ],
+      "sku": "SLACKS-30-L",
+      "price": "890.00",
+      "compareAtPrice": null,
+      "initialStock": 4,
+      "weightGrams": 420,
+      "status": "ACTIVE"
+    },
+    {
+      "variantIds": [
+        "val-32",
+        "val-regular"
+      ],
+      "sku": "SLACKS-32-R",
+      "price": "890.00",
+      "compareAtPrice": null,
+      "initialStock": 9,
+      "weightGrams": 410,
+      "status": "ACTIVE"
+    }
+  ]
+}
